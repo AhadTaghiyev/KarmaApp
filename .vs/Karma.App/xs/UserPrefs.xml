@@ -1,19 +1,25 @@
 ﻿<Properties StartupConfiguration="{FC6F6BA0-E3DD-4525-918F-518549985C3D}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Karma.Data FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Karma.App PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Karma.App/Views/Blog/Detail.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Karma.Data/Class1.cs">
     <Files>
       <File FileName="Karma.App/Controllers/HomeController.cs" />
       <File FileName="Karma.App/Views/_ViewImports.cshtml" />
-      <File FileName="Karma.App/Views/Shared/_Layout.cshtml" Line="21" Column="2" />
+      <File FileName="Karma.App/Views/Shared/_Layout.cshtml" />
       <File FileName="Karma.App/Views/Home/Index.cshtml" />
       <File FileName="Karma.App/Controllers/ShopController.cs" />
       <File FileName="Karma.App/Views/Shop/Index.cshtml" />
-      <File FileName="Karma.App/Controllers/BlogController.cs" Line="148" Column="1" />
-      <File FileName="Karma.App/Views/Blog/Index.cshtml" Line="220" Column="54" />
+      <File FileName="Karma.App/Controllers/BlogController.cs" />
+      <File FileName="Karma.App/Views/Blog/Index.cshtml" />
       <File FileName="Karma.Core/Entities/BaseEntities/BaseEntity.cs" />
       <File FileName="Karma.Data/Contexts/KarmaDbContext.cs" />
-      <File FileName="Karma.App/Program.cs" Line="33" Column="1" />
+      <File FileName="Karma.App/Program.cs" />
       <File FileName="Karma.App/appsettings.json" />
       <File FileName="Karma.App/Views/Shop/Create.cshtml" />
       <File FileName="Karma.Core/Entities/Category.cs" />
@@ -40,14 +46,16 @@
       <File FileName="Karma.App/Controllers/TagController.cs" />
       <File FileName="Karma.Core/DTOS/Categories/CategoryGetDto.cs" />
       <File FileName="Karma.App/Views/Tag/Create.cshtml" />
-      <File FileName="Karma.Core/DTOS/Authors/AuthorPostDto.cs" Line="13" Column="7" />
-      <File FileName="Karma.Core/DTOS/Authors/AuthorGetDto.cs" Line="16" Column="1" />
-      <File FileName="Karma.App/Controllers/AuthorController.cs" Line="61" Column="45" />
+      <File FileName="Karma.Core/DTOS/Authors/AuthorPostDto.cs" />
+      <File FileName="Karma.Core/DTOS/Authors/AuthorGetDto.cs" />
+      <File FileName="Karma.App/Controllers/AuthorController.cs" Line="7" Column="14" />
       <File FileName="Karma.App/Views/Author/Create.cshtml" />
       <File FileName="Karma.App/Views/Blog/Create.cshtml" />
       <File FileName="Karma.Core/DTOS/Blogs/BlogPostDto.cs" />
       <File FileName="Karma.Core/DTOS/Blogs/BlogGetDto.cs" />
-      <File FileName="Karma.App/Views/Blog/Detail.cshtml" Line="336" Column="28" />
+      <File FileName="Karma.App/Views/Blog/Detail.cshtml" Line="299" Column="14" />
+      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.311/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="539" Column="94" />
+      <File FileName="Karma.Data/Class1.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -56,27 +64,14 @@
             <Node name="Karma.App" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Blog" expanded="True">
-                  <Node name="Detail.cshtml" selected="True" />
-                </Node>
+                <Node name="Blog" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>
-            <Node name="Karma.Core" expanded="True">
-              <Node name="DTOS" expanded="True">
-                <Node name="Authors" expanded="True" />
-                <Node name="Blogs" expanded="True" />
-              </Node>
-              <Node name="Entities" expanded="True" />
-            </Node>
+            <Node name="Karma.Data" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Karma.App PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

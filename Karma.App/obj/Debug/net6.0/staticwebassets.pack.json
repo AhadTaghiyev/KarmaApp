@@ -1,0 +1,1225 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/obj/Debug/net6.0/scopedcss/projectbundle/Karma.App.bundle.scp.css",
+      "PackagePath": "staticwebassets/Karma.App.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/.DS_Store",
+      "PackagePath": "staticwebassets/Karma Shop-doc/.DS_Store"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/_DS_Store",
+      "PackagePath": "staticwebassets/Karma Shop-doc"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/css/_DS_Store",
+      "PackagePath": "staticwebassets/Karma Shop-doc/css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/css/font-awesome.min.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/css/font-awesome.min.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/css/main.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/css/main.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/css/normalize.min.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/css/normalize.min.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/fonts/FontAwesome.otf",
+      "PackagePath": "staticwebassets/Karma Shop-doc/fonts/FontAwesome.otf"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/fonts/_DS_Store",
+      "PackagePath": "staticwebassets/Karma Shop-doc/fonts"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/fonts/fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets/Karma Shop-doc/fonts/fontawesome-webfont.eot"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/fonts/fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets/Karma Shop-doc/fonts/fontawesome-webfont.svg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/Karma Shop-doc/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/Karma Shop-doc/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/img/logo.png",
+      "PackagePath": "staticwebassets/Karma Shop-doc/img/logo.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/index.html",
+      "PackagePath": "staticwebassets/Karma Shop-doc/index.html"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/js/_DS_Store",
+      "PackagePath": "staticwebassets/Karma Shop-doc/js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/js/custom.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/js/custom.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/js/jquery-1.11.0.min.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/js/jquery-1.11.0.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/js/jquery.nav.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/js/jquery.nav.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/_DS_Store",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shAutoloader.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shAutoloader.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushAS3.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushAS3.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushAppleScript.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushAppleScript.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushBash.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushBash.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushCSharp.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushCSharp.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushColdFusion.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushColdFusion.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushCpp.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushCpp.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushCss.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushCss.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushDelphi.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushDelphi.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushDiff.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushDiff.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushErlang.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushErlang.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushGroovy.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushGroovy.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushJScript.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushJScript.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushJava.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushJava.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushJavaFX.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushJavaFX.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushPerl.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushPerl.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushPhp.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushPhp.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushPlain.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushPlain.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushPowerShell.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushPowerShell.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushPython.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushPython.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushRuby.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushRuby.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushSass.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushSass.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushScala.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushScala.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushSql.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushSql.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushVb.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushVb.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shBrushXml.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shBrushXml.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shCore.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shCore.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/scripts/shLegacy.js",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/scripts/shLegacy.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCore.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCore.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCoreDefault.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCoreDefault.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCoreDjango.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCoreDjango.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCoreEclipse.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCoreEclipse.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCoreEmacs.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCoreEmacs.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCoreFadeToGrey.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCoreFadeToGrey.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCoreMDUltra.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCoreMDUltra.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCoreMidnight.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCoreMidnight.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shCoreRDark.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shCoreRDark.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeDefault.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeDefault.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeDjango.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeDjango.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeEclipse.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeEclipse.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeEmacs.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeEmacs.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeFadeToGrey.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeFadeToGrey.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeMDUltra.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeMDUltra.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeMidnight.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeMidnight.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeRDark.css",
+      "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeRDark.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/.DS_Store",
+      "PackagePath": "staticwebassets/css/.DS_Store"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/availability-calendar.css",
+      "PackagePath": "staticwebassets/css/availability-calendar.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/bootstrap.css",
+      "PackagePath": "staticwebassets/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/bootstrap.map",
+      "PackagePath": "staticwebassets/css/bootstrap.map"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/font-awesome.min.css",
+      "PackagePath": "staticwebassets/css/font-awesome.min.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/ion.rangeSlider.css",
+      "PackagePath": "staticwebassets/css/ion.rangeSlider.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/ion.rangeSlider.skinFlat.css",
+      "PackagePath": "staticwebassets/css/ion.rangeSlider.skinFlat.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/jquerysctipttop.css",
+      "PackagePath": "staticwebassets/css/jquerysctipttop.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/linearicons.css",
+      "PackagePath": "staticwebassets/css/linearicons.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/magnific-popup.css",
+      "PackagePath": "staticwebassets/css/magnific-popup.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/main.css",
+      "PackagePath": "staticwebassets/css/main.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/main.css.map",
+      "PackagePath": "staticwebassets/css/main.css.map"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/main.map",
+      "PackagePath": "staticwebassets/css/main.map"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/nice-select.css",
+      "PackagePath": "staticwebassets/css/nice-select.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/nouislider.min.css",
+      "PackagePath": "staticwebassets/css/nouislider.min.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/owl.carousel.css",
+      "PackagePath": "staticwebassets/css/owl.carousel.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/css/themify-icons.css",
+      "PackagePath": "staticwebassets/css/themify-icons.css"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/FontAwesome.otf",
+      "PackagePath": "staticwebassets/fonts/FontAwesome.otf"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/Linearicons-Free.eot",
+      "PackagePath": "staticwebassets/fonts/Linearicons-Free.eot"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/Linearicons-Free.svg",
+      "PackagePath": "staticwebassets/fonts/Linearicons-Free.svg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets/fonts/Linearicons-Free.ttf"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/Linearicons-Free.woff",
+      "PackagePath": "staticwebassets/fonts/Linearicons-Free.woff"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets/fonts/Linearicons-Free.woff2"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.eot"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.svg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/themify.eot",
+      "PackagePath": "staticwebassets/fonts/themify.eot"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/themify.svg",
+      "PackagePath": "staticwebassets/fonts/themify.svg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/themify.ttf",
+      "PackagePath": "staticwebassets/fonts/themify.ttf"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/fonts/themify.woff",
+      "PackagePath": "staticwebassets/fonts/themify.woff"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/.DS_Store",
+      "PackagePath": "staticwebassets/img/.DS_Store"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/banner/banner-bg.jpg",
+      "PackagePath": "staticwebassets/img/banner/banner-bg.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/banner/banner-img.png",
+      "PackagePath": "staticwebassets/img/banner/banner-img.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/banner/common-banner.jpg",
+      "PackagePath": "staticwebassets/img/banner/common-banner.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/banner/next.png",
+      "PackagePath": "staticwebassets/img/banner/next.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/banner/prev.png",
+      "PackagePath": "staticwebassets/img/banner/prev.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/add.jpg",
+      "PackagePath": "staticwebassets/img/blog/add.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/author.png",
+      "PackagePath": "staticwebassets/img/blog/author.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/c1.jpg",
+      "PackagePath": "staticwebassets/img/blog/c1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/c2.jpg",
+      "PackagePath": "staticwebassets/img/blog/c2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/c3.jpg",
+      "PackagePath": "staticwebassets/img/blog/c3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/c4.jpg",
+      "PackagePath": "staticwebassets/img/blog/c4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/c5.jpg",
+      "PackagePath": "staticwebassets/img/blog/c5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/c6.jpg",
+      "PackagePath": "staticwebassets/img/blog/c6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/cat-post/cat-post-1.jpg",
+      "PackagePath": "staticwebassets/img/blog/cat-post/cat-post-1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/cat-post/cat-post-2.jpg",
+      "PackagePath": "staticwebassets/img/blog/cat-post/cat-post-2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/cat-post/cat-post-3.jpg",
+      "PackagePath": "staticwebassets/img/blog/cat-post/cat-post-3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/causes/causes-1.jpg",
+      "PackagePath": "staticwebassets/img/blog/causes/causes-1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/causes/causes-2.jpg",
+      "PackagePath": "staticwebassets/img/blog/causes/causes-2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/causes/causes-3.jpg",
+      "PackagePath": "staticwebassets/img/blog/causes/causes-3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/feature-img1.jpg",
+      "PackagePath": "staticwebassets/img/blog/feature-img1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/latest-post/l-post-1.jpg",
+      "PackagePath": "staticwebassets/img/blog/latest-post/l-post-1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/latest-post/l-post-2.jpg",
+      "PackagePath": "staticwebassets/img/blog/latest-post/l-post-2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/latest-post/l-post-3.jpg",
+      "PackagePath": "staticwebassets/img/blog/latest-post/l-post-3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/latest-post/l-post-4.jpg",
+      "PackagePath": "staticwebassets/img/blog/latest-post/l-post-4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/main-blog/m-blog-1.jpg",
+      "PackagePath": "staticwebassets/img/blog/main-blog/m-blog-1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/main-blog/m-blog-2.jpg",
+      "PackagePath": "staticwebassets/img/blog/main-blog/m-blog-2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/main-blog/m-blog-3.jpg",
+      "PackagePath": "staticwebassets/img/blog/main-blog/m-blog-3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/main-blog/m-blog-4.jpg",
+      "PackagePath": "staticwebassets/img/blog/main-blog/m-blog-4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/main-blog/m-blog-5.jpg",
+      "PackagePath": "staticwebassets/img/blog/main-blog/m-blog-5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/next.jpg",
+      "PackagePath": "staticwebassets/img/blog/next.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/popular-post/post1.jpg",
+      "PackagePath": "staticwebassets/img/blog/popular-post/post1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/popular-post/post2.jpg",
+      "PackagePath": "staticwebassets/img/blog/popular-post/post2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/popular-post/post3.jpg",
+      "PackagePath": "staticwebassets/img/blog/popular-post/post3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/popular-post/post4.jpg",
+      "PackagePath": "staticwebassets/img/blog/popular-post/post4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/post-img1.jpg",
+      "PackagePath": "staticwebassets/img/blog/post-img1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/post-img2.jpg",
+      "PackagePath": "staticwebassets/img/blog/post-img2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/blog/prev.jpg",
+      "PackagePath": "staticwebassets/img/blog/prev.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/brand/1.png",
+      "PackagePath": "staticwebassets/img/brand/1.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/brand/2.png",
+      "PackagePath": "staticwebassets/img/brand/2.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/brand/3.png",
+      "PackagePath": "staticwebassets/img/brand/3.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/brand/4.png",
+      "PackagePath": "staticwebassets/img/brand/4.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/brand/5.png",
+      "PackagePath": "staticwebassets/img/brand/5.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/cart.jpg",
+      "PackagePath": "staticwebassets/img/cart.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/category/c1.jpg",
+      "PackagePath": "staticwebassets/img/category/c1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/category/c2.jpg",
+      "PackagePath": "staticwebassets/img/category/c2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/category/c3.jpg",
+      "PackagePath": "staticwebassets/img/category/c3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/category/c4.jpg",
+      "PackagePath": "staticwebassets/img/category/c4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/category/c5.jpg",
+      "PackagePath": "staticwebassets/img/category/c5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/category/s-p1.jpg",
+      "PackagePath": "staticwebassets/img/category/s-p1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/d.jpg",
+      "PackagePath": "staticwebassets/img/elements/d.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/disabled-check.png",
+      "PackagePath": "staticwebassets/img/elements/disabled-check.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/disabled-radio.png",
+      "PackagePath": "staticwebassets/img/elements/disabled-radio.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/f1.jpg",
+      "PackagePath": "staticwebassets/img/elements/f1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/f2.jpg",
+      "PackagePath": "staticwebassets/img/elements/f2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/f3.jpg",
+      "PackagePath": "staticwebassets/img/elements/f3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/f4.jpg",
+      "PackagePath": "staticwebassets/img/elements/f4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/f5.jpg",
+      "PackagePath": "staticwebassets/img/elements/f5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/f6.jpg",
+      "PackagePath": "staticwebassets/img/elements/f6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/f7.jpg",
+      "PackagePath": "staticwebassets/img/elements/f7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/f8.jpg",
+      "PackagePath": "staticwebassets/img/elements/f8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/g1.jpg",
+      "PackagePath": "staticwebassets/img/elements/g1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/g2.jpg",
+      "PackagePath": "staticwebassets/img/elements/g2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/g3.jpg",
+      "PackagePath": "staticwebassets/img/elements/g3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/g4.jpg",
+      "PackagePath": "staticwebassets/img/elements/g4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/g5.jpg",
+      "PackagePath": "staticwebassets/img/elements/g5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/g6.jpg",
+      "PackagePath": "staticwebassets/img/elements/g6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/g7.jpg",
+      "PackagePath": "staticwebassets/img/elements/g7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/g8.jpg",
+      "PackagePath": "staticwebassets/img/elements/g8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/primary-check.png",
+      "PackagePath": "staticwebassets/img/elements/primary-check.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/primary-radio.png",
+      "PackagePath": "staticwebassets/img/elements/primary-radio.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/success-check.png",
+      "PackagePath": "staticwebassets/img/elements/success-check.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/elements/success-radio.png",
+      "PackagePath": "staticwebassets/img/elements/success-radio.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/exclusive.jpg",
+      "PackagePath": "staticwebassets/img/exclusive.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/fav.png",
+      "PackagePath": "staticwebassets/img/fav.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/features/f-icon1.png",
+      "PackagePath": "staticwebassets/img/features/f-icon1.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/features/f-icon2.png",
+      "PackagePath": "staticwebassets/img/features/f-icon2.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/features/f-icon3.png",
+      "PackagePath": "staticwebassets/img/features/f-icon3.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/features/f-icon4.png",
+      "PackagePath": "staticwebassets/img/features/f-icon4.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/i1.jpg",
+      "PackagePath": "staticwebassets/img/i1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/i2.jpg",
+      "PackagePath": "staticwebassets/img/i2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/i3.jpg",
+      "PackagePath": "staticwebassets/img/i3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/i4.jpg",
+      "PackagePath": "staticwebassets/img/i4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/i5.jpg",
+      "PackagePath": "staticwebassets/img/i5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/i6.jpg",
+      "PackagePath": "staticwebassets/img/i6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/i7.jpg",
+      "PackagePath": "staticwebassets/img/i7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/i8.jpg",
+      "PackagePath": "staticwebassets/img/i8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/l1.jpg",
+      "PackagePath": "staticwebassets/img/l1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/l2.jpg",
+      "PackagePath": "staticwebassets/img/l2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/l3.jpg",
+      "PackagePath": "staticwebassets/img/l3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/l4.jpg",
+      "PackagePath": "staticwebassets/img/l4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/l5.jpg",
+      "PackagePath": "staticwebassets/img/l5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/l6.jpg",
+      "PackagePath": "staticwebassets/img/l6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/l7.jpg",
+      "PackagePath": "staticwebassets/img/l7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/l8.jpg",
+      "PackagePath": "staticwebassets/img/l8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/login.jpg",
+      "PackagePath": "staticwebassets/img/login.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/logo.png",
+      "PackagePath": "staticwebassets/img/logo.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/men-bg.jpg",
+      "PackagePath": "staticwebassets/img/men-bg.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/ob1.jpg",
+      "PackagePath": "staticwebassets/img/ob1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/ob2.jpg",
+      "PackagePath": "staticwebassets/img/ob2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/ob3.jpg",
+      "PackagePath": "staticwebassets/img/ob3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/.DS_Store",
+      "PackagePath": "staticwebassets/img/organic-food/.DS_Store"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/b1.png",
+      "PackagePath": "staticwebassets/img/organic-food/b1.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/b2.png",
+      "PackagePath": "staticwebassets/img/organic-food/b2.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/b3.png",
+      "PackagePath": "staticwebassets/img/organic-food/b3.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/b4.png",
+      "PackagePath": "staticwebassets/img/organic-food/b4.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/c1.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/c1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/c2.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/c2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/c3.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/c3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/c4.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/c4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/cd-bg.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/cd-bg.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/cd.png",
+      "PackagePath": "staticwebassets/img/organic-food/cd.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/ci1.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/ci1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/ci2.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/ci2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/ci3.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/ci3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/f1.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/f1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/f2.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/f2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/f3.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/f3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/f4.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/f4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/m1.png",
+      "PackagePath": "staticwebassets/img/organic-food/m1.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp1.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp10.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp10.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp11.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp11.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp12.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp12.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp2.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp3.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp4.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp5.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp6.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp7.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp8.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/mp9.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/mp9.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/ob1.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/ob1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/ob2.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/ob2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/ob3.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/ob3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/p1.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/p1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/p2.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/p2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/p3.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/p3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/p4.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/p4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/p5.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/p5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/p6.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/p6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/p7.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/p7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/p8.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/p8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pl1.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pl1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pl2.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pl2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pl3.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pl3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pl4.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pl4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pl5.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pl5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pl6.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pl6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pl7.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pl7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pl8.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pl8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/pm.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/pm.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/q1.jpg",
+      "PackagePath": "staticwebassets/img/organic-food/q1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/u1.png",
+      "PackagePath": "staticwebassets/img/organic-food/u1.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/u2.png",
+      "PackagePath": "staticwebassets/img/organic-food/u2.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/organic-food/u3.png",
+      "PackagePath": "staticwebassets/img/organic-food/u3.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/card.jpg",
+      "PackagePath": "staticwebassets/img/product/card.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/e-p1.png",
+      "PackagePath": "staticwebassets/img/product/e-p1.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/next.png",
+      "PackagePath": "staticwebassets/img/product/next.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/p1.jpg",
+      "PackagePath": "staticwebassets/img/product/p1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/p2.jpg",
+      "PackagePath": "staticwebassets/img/product/p2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/p3.jpg",
+      "PackagePath": "staticwebassets/img/product/p3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/p4.jpg",
+      "PackagePath": "staticwebassets/img/product/p4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/p5.jpg",
+      "PackagePath": "staticwebassets/img/product/p5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/p6.jpg",
+      "PackagePath": "staticwebassets/img/product/p6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/p7.jpg",
+      "PackagePath": "staticwebassets/img/product/p7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/p8.jpg",
+      "PackagePath": "staticwebassets/img/product/p8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/prev.png",
+      "PackagePath": "staticwebassets/img/product/prev.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/review-1.png",
+      "PackagePath": "staticwebassets/img/product/review-1.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/review-2.png",
+      "PackagePath": "staticwebassets/img/product/review-2.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/product/review-3.png",
+      "PackagePath": "staticwebassets/img/product/review-3.png"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/q1.jpg",
+      "PackagePath": "staticwebassets/img/q1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r1.jpg",
+      "PackagePath": "staticwebassets/img/r1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r10.jpg",
+      "PackagePath": "staticwebassets/img/r10.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r11.jpg",
+      "PackagePath": "staticwebassets/img/r11.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r12.jpg",
+      "PackagePath": "staticwebassets/img/r12.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r2.jpg",
+      "PackagePath": "staticwebassets/img/r2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r3.jpg",
+      "PackagePath": "staticwebassets/img/r3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r4.jpg",
+      "PackagePath": "staticwebassets/img/r4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r5.jpg",
+      "PackagePath": "staticwebassets/img/r5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r6.jpg",
+      "PackagePath": "staticwebassets/img/r6.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r7.jpg",
+      "PackagePath": "staticwebassets/img/r7.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r8.jpg",
+      "PackagePath": "staticwebassets/img/r8.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/r9.jpg",
+      "PackagePath": "staticwebassets/img/r9.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/sd/c1.jpg",
+      "PackagePath": "staticwebassets/img/sd/c1.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/sd/c2.jpg",
+      "PackagePath": "staticwebassets/img/sd/c2.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/sd/c3.jpg",
+      "PackagePath": "staticwebassets/img/sd/c3.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/sd/c4.jpg",
+      "PackagePath": "staticwebassets/img/sd/c4.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/img/sd/c5.jpg",
+      "PackagePath": "staticwebassets/img/sd/c5.jpg"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/.DS_Store",
+      "PackagePath": "staticwebassets/js/.DS_Store"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/countdown.js",
+      "PackagePath": "staticwebassets/js/countdown.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/gmaps.min.js",
+      "PackagePath": "staticwebassets/js/gmaps.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/ion.rangeSlider.js",
+      "PackagePath": "staticwebassets/js/ion.rangeSlider.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets/js/jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets/js/jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets/js/jquery.nice-select.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/jquery.sticky.js",
+      "PackagePath": "staticwebassets/js/jquery.sticky.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/nouislider.min.js",
+      "PackagePath": "staticwebassets/js/nouislider.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/js/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/parallax.min.js",
+      "PackagePath": "staticwebassets/js/parallax.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/vendor/bootstrap.min.js",
+      "PackagePath": "staticwebassets/js/vendor/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/vendor/jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets/js/vendor/jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.App/wwwroot/js/vendor/popper.js",
+      "PackagePath": "staticwebassets/js/vendor/popper.js"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.Karma.App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.Karma.App.props",
+      "PackagePath": "build\\Karma.App.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Karma.App.props",
+      "PackagePath": "buildMultiTargeting\\Karma.App.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Karma.App.props",
+      "PackagePath": "buildTransitive\\Karma.App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

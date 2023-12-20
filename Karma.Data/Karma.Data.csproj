@@ -7,18 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Contexts\" />
-    <None Remove="ServiceRegisterations\" />
+    <ProjectReference Include="..\Karma.Core\Karma.Core.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Contexts\" />
-    <Folder Include="ServiceRegisterations\" />
-  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Karma.Core\Karma.Core.csproj" />
   </ItemGroup>
 </Project>

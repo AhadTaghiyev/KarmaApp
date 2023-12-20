@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Desktop\\Karma.App\\Karma.Core\\Karma.Core.csproj": {}
+    "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.Core/Karma.Core.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Desktop\\Karma.App\\Karma.Core\\Karma.Core.csproj": {
+    "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.Core/Karma.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\Karma.App\\Karma.Core\\Karma.Core.csproj",
+        "projectUniqueName": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.Core/Karma.Core.csproj",
         "projectName": "Karma.Core",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\Karma.App\\Karma.Core\\Karma.Core.csproj",
-        "packagesPath": "C:\\Users\\ehedtagiyev\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\Karma.App\\Karma.Core\\obj\\",
+        "projectPath": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.Core/Karma.Core.csproj",
+        "packagesPath": "/Users/ehedtagiyev/.nuget/packages/",
+        "outputPath": "/Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ehedtagiyev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ehedtagiyev/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
         }
       }
     }
