@@ -1,0 +1,8 @@
+\\Mac\Home\Desktop\Karma.App\Karma.App\obj\Debug\net6.0\Karma.App.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Karma.App\Karma.App\obj\Debug\net6.0\Karma.App.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\Karma.App\Karma.App\obj\Debug\net6.0\Karma.App.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\Karma.App\Karma.App\obj\Debug\net6.0\Karma.App.AssemblyInfo.cs
+\\Mac\Home\Desktop\Karma.App\Karma.App\obj\Debug\net6.0\Karma.App.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Karma.App\Karma.App\obj\Debug\net6.0\Karma.App.MvcApplicationPartsAssemblyInfo.cache
+\\Mac\Home\Desktop\Karma.App\Karma.App\obj\Debug\net6.0\Karma.App.RazorAssemblyInfo.cache
+\\Mac\Home\Desktop\Karma.App\Karma.App\obj\Debug\net6.0\Karma.App.RazorAssemblyInfo.cs

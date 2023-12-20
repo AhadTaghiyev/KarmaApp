@@ -1,0 +1,54 @@
+﻿@model BlogPostDto
+
+@{
+    Layout = null;
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<div class="container">
+    <form method="post" action="create">
+        <div class="alert alert-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="mb-3">
+            <label asp-for="Title" for="exampleInputEmail1" class="form-label"></label>
+            <input type="text" asp-for="@Model.Title" class="form-control" aria-describedby="emailHelp">
+            <span class="text text-danger" asp-validation-for="@Model.Title"></span>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" for="exampleInputEmail1" class="form-label"></label>
+            <input type="text" asp-for="@Model.Description" class="form-control" aria-describedby="emailHelp">
+            <span class="text text-danger" asp-validation-for="@Model.Description"></span>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Image" class="form-label"></label>
+            <input type="text" asp-for="@Model.Image" class="form-control" aria-describedby="emailHelp">
+            <span class="text text-danger" asp-validation-for="@Model.Image"></span>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <select asp-for="AuthorId" class="form-select" aria-label="Default select example">
+            <option selected>Please choose Author</option>
+            @foreach (var item in ViewBag.Authors)
+            {
+                <option value="@item.Id">@item.FullName</option>
+            }
+        </select>
+        <span asp-validation-for="AuthorId" class="text text-danger"></span>
+
+
+        <select asp-for="TagsIds" class="form-select" aria-label="Default select example">
+            <option selected>Please choose Tags</option>
+            @foreach (var item in ViewBag.Tags)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+        <span asp-validation-for="AuthorId" class="text text-danger"></span>
+
+
+        @Html.AntiForgeryToken();
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
