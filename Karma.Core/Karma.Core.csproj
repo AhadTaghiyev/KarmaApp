@@ -19,7 +19,6 @@
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Entities\BaseEntities\" />
-    <Folder Include="DTOS\" />
     <Folder Include="DTOS\Colors\" />
     <Folder Include="DTOS\Position\" />
     <Folder Include="DTOS\Tags\" />
