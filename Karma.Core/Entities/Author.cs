@@ -1,6 +1,5 @@
 ﻿using System;
 using Karma.Core.Entities.BaseEntities;
-
 namespace Karma.Core.Entities
 {
 	public class Author: BaseEntity
@@ -11,6 +10,8 @@ namespace Karma.Core.Entities
 		public int PositionId { get; set; }
 		public List<SocialNetwork> SocialNetworks { get; set; }
 		public List<Blog> Blogs { get; set; }
+		public string Image { get; set; }= null!;
+		public string Storage { get; set; } = null!;
     }
 }
 

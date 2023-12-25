@@ -13,6 +13,11 @@
     <None Remove="Views\Position\" />
     <None Remove="Views\Tag\" />
     <None Remove="Views\Author\" />
+    <None Remove="areas\Admin\Views\Category\" />
+    <None Remove="areas\Admin\Views\Color\" />
+    <None Remove="areas\Admin\Views\Position\" />
+    <None Remove="areas\Admin\Views\Tag\" />
+    <None Remove="areas\Admin\Views\Author\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
@@ -25,9 +30,16 @@
     <Folder Include="Views\Position\" />
     <Folder Include="Views\Tag\" />
     <Folder Include="Views\Author\" />
+    <Folder Include="areas\Admin\Views\Category\" />
+    <Folder Include="areas\Admin\Views\Color\" />
+    <Folder Include="areas\Admin\Views\Position\" />
+    <Folder Include="areas\Admin\Views\Tag\" />
+    <Folder Include="areas\Admin\Views\Author\" />
+    <Folder Include="wwwroot\img\author\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\img\author\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\admin\assets\css\maps\vertical-layout-light\style.css.map" />
@@ -1445,7 +1457,7 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Karma.Data\Karma.Data.csproj">
+    <ProjectReference Include="..\Karma.Service\Karma.Service.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

@@ -15,7 +15,6 @@ public class BlogController : Controller
     {
         _context = context;
     }
-
     public async Task<IActionResult> Index()
     {
         IEnumerable<BlogGetDto> Blogs =await _context.Blogs.Where(x => x.IsDeleted == false)
@@ -44,59 +43,6 @@ public class BlogController : Controller
             
         return View(Blogs);
     }
-
-    public async Task<IActionResult> Create()
-    {
-        ViewBag.Authors =await _context.Authors.Where(x => !x.IsDeleted).AsNoTracking().ToListAsync();
-        ViewBag.Tags =await _context.Tags.Where(x => !x.IsDeleted).AsNoTracking().ToListAsync();
-        return View();
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> Create(BlogPostDto dto)
-    {
-
-        if (!ModelState.IsValid)
-        {
-            ViewBag.Authors = await _context.Authors.Where(x => !x.IsDeleted).AsNoTracking().ToListAsync();
-            ViewBag.Tags = await _context.Tags.Where(x => !x.IsDeleted).AsNoTracking().ToListAsync();
-            return View();
-        }
-
-        if(!await _context.Authors.AnyAsync(x => x.Id == dto.AuthorId))
-        {
-            ModelState.AddModelError("AuthorId","Huqularimiz qorunur");
-            ViewBag.Authors = await _context.Authors.Where(x => !x.IsDeleted).AsNoTracking().ToListAsync();
-            ViewBag.Tags = await _context.Tags.Where(x => !x.IsDeleted).AsNoTracking().ToListAsync();
-            return View();
-        }
-
-        Blog blog = new Blog
-        {
-            Image = dto.Image,
-            Description = dto.Description,
-            Title = dto.Title,
-            CreatedAt = DateTime.Now,
-            AuthorId=dto.AuthorId,
-           
-        };
-        await _context.Blogs.AddAsync(blog);
-        foreach (var item in dto.TagsIds)
-        {
-            TagBlog tagBlog = new TagBlog
-            {
-                CreatedAt = DateTime.Now,
-                Blog = blog,
-                TagId = item
-            };
-            //blog.TagBlogs.Add(tagBlog);
-           await _context.TagBlogs.AddAsync(tagBlog);
-        }
-     
-       await _context.SaveChangesAsync();
-        return RedirectToAction(nameof(Index));
-    }
-
     public async Task<IActionResult> Detail(int id)
     {
         var query = _context.Blogs.Where(x => !x.IsDeleted && x.Id == id)
@@ -149,8 +95,6 @@ public class BlogController : Controller
 
         return View(blogGetDto);
     }
-
-
     private async Task IncreaseCount(int id)
     {
         Blog?blog =await _context.Blogs.FindAsync(id);

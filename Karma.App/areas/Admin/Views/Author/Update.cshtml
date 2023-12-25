@@ -1,0 +1,94 @@
+﻿@model AuthorGetDto
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Basic form layout
+                    </p>
+                    <form method="post" class="forms-sample">
+                        <div class="alert alert-danger" asp-validation-summary="ModelOnly"></div>
+                        <div class="form-group">
+                            <label asp-for="FullName"></label>
+                            <input asp-for="FullName" class="form-control" placeholder="Name">
+                            <span class="text text-danger" asp-validation-for="FullName"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Info"></label>
+                            <input asp-for="Info" class="form-control" placeholder="Info">
+                            <span class="text text-danger" asp-validation-for="Info"></span>
+                        </div>
+                        <div class="form-group">
+                            <select asp-for="PositionId" class="form-select" aria-label="Default select example">
+                                <option selected>Positions</option>
+                                @foreach (var item in ViewBag.Positions)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                            <span class="text text-danger" asp-validation-for="PositionId"></span>
+                        </div>
+
+                        <div class="form-row col-12" id="social">
+                            @for (int i = 0; i < Model.Icons.Count(); i++)
+                            {
+                                <div class="form-group col-md-6" data-index="0">
+                                    <label>Social Icon</label>
+                                    <input class="form-control" asp-for="Icons" value="@Model.Icons[i]">
+                                    <span asp-validation-for="Icons"></span>
+                                    <label> Social Url</label>
+                                    <input class="form-control" asp-for="Urls" value="@Model.Urls[i]">
+                                    <span asp-validation-for="Urls"></span>
+                                    @if (i != 0)
+                                    {
+                                        <span><i style="cursor:pointer" class="fas fa-minus delete-feature"> </i></span>
+                                    }
+                                </div>
+                            }
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group">
+                                <button type="button" data-nextIndex="2" class="add-social btn btn-primary">+</button>
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary me-2">Submit</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+            $(document).on("click", ".add-social", function (e) {
+                e.preventDefault();
+                var nextIndex = $(this).attr("data-nextIndex");
+                var inputGroup = `
+        <div class="form-group col-md-6" data-index="0">
+                                <label>Social Icon</label>
+                                <input class="form-control" type="text" data-val="true" data-val-required="The Icons field is required." id="Icons" name="Icons" value="">
+                                <span class="field-validation-valid" data-valmsg-for="Icons" data-valmsg-replace="true"></span>
+                                <label> Social Url</label>
+                                <input class="form-control" type="text" data-val="true" data-val-required="The Urls field is required." id="Urls" name="Urls" value="">
+                                <span class="field-validation-valid" data-valmsg-for="Urls" data-valmsg-replace="true"></span>
+                                <span><i style="cursor:pointer" class="fas fa-minus delete-feature"> </i></span>
+                            </div>
+        `
+                $("#social").append($(inputGroup))
+                nextIndex = +nextIndex + 1;
+                console.log(nextIndex)
+                $(this).attr("data-nextIndex", nextIndex)
+            })
+            $(document).on("click", ".delete-feature", function (e) {
+                e.preventDefault();
+                $(this).parents(".form-group").empty();
+            })
+})
+</script>

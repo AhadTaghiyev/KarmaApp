@@ -1,0 +1,17 @@
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/bin/Debug/net6.0/Karma.Service.deps.json
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/bin/Debug/net6.0/Karma.Service.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/bin/Debug/net6.0/Karma.Service.pdb
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/bin/Debug/net6.0/Karma.Core.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/bin/Debug/net6.0/Karma.Data.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/bin/Debug/net6.0/Karma.Data.pdb
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/bin/Debug/net6.0/Karma.Core.pdb
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/Karma.Service.csproj.AssemblyReference.cache
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/Karma.Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/Karma.Service.AssemblyInfoInputs.cache
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/Karma.Service.AssemblyInfo.cs
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/Karma.Service.csproj.CoreCompileInputs.cache
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/Karma.Service.csproj.CopyComplete
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/Karma.Service.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/refint/Karma.Service.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/Karma.Service.pdb
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/Debug/net6.0/ref/Karma.Service.dll

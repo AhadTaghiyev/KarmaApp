@@ -1,5 +1,7 @@
 ﻿using System;
+using Karma.Core.Repositories;
 using Karma.Data.Contexts;
+using Karma.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,6 +16,12 @@ namespace Karma.Data.ServiceRegisterations
             {
                 opt.UseSqlServer(configuration.GetConnectionString("Default"));
             });
+            services.AddScoped<IBrandRepository,BrandRepository>();
+            services.AddScoped<ICategoryRepository,CategoryRepository>();
+            services.AddScoped<IColorRepository,ColorRepository>();
+            services.AddScoped<IPositionRepository,PositionRepository>();
+            services.AddScoped<ITagRepository,TagRepository>();
+            services.AddScoped<IAuthorRepository,AuthorRepository>();
         }
     }
 }

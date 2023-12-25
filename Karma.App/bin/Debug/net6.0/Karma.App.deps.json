@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Karma.App/1.0.0": {
         "dependencies": {
-          "Karma.Data": "1.0.0",
+          "Karma.Service": "1.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.25",
           "Microsoft.EntityFrameworkCore.Design": "6.0.25",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16"
@@ -1105,22 +1105,22 @@
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "2.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "2.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "2.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "2.1.1.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -2515,6 +2515,14 @@
         },
         "runtime": {
           "Karma.Data.dll": {}
+        }
+      },
+      "Karma.Service/1.0.0": {
+        "dependencies": {
+          "Karma.Data": "1.0.0"
+        },
+        "runtime": {
+          "Karma.Service.dll": {}
         }
       }
     }
@@ -4050,6 +4058,11 @@
       "sha512": ""
     },
     "Karma.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Karma.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

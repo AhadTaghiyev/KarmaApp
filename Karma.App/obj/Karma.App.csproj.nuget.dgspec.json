@@ -1,35 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.App\\Karma.App.csproj": {}
+    "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Karma.App.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.App\\Karma.App.csproj": {
+    "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Karma.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.App\\Karma.App.csproj",
+        "projectUniqueName": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Karma.App.csproj",
         "projectName": "Karma.App",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.App\\Karma.App.csproj",
-        "packagesPath": "C:\\Users\\ehedtagiyev\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.App\\obj\\",
+        "projectPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Karma.App.csproj",
+        "packagesPath": "/Users/ehedtagiyev/.nuget/packages/",
+        "outputPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ehedtagiyev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ehedtagiyev/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.311/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Data\\Karma.Data.csproj": {
-                "projectPath": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Data\\Karma.Data.csproj"
+              "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/Karma.Service.csproj": {
+                "projectPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/Karma.Service.csproj"
               }
             }
           }
@@ -78,28 +78,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Core\\Karma.Core.csproj": {
+    "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/Karma.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Core\\Karma.Core.csproj",
+        "projectUniqueName": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/Karma.Core.csproj",
         "projectName": "Karma.Core",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Core\\Karma.Core.csproj",
-        "packagesPath": "C:\\Users\\ehedtagiyev\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Core\\obj\\",
+        "projectPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/Karma.Core.csproj",
+        "packagesPath": "/Users/ehedtagiyev/.nuget/packages/",
+        "outputPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ehedtagiyev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ehedtagiyev/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -129,40 +128,42 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Data\\Karma.Data.csproj": {
+    "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Data/Karma.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Data\\Karma.Data.csproj",
+        "projectUniqueName": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Data/Karma.Data.csproj",
         "projectName": "Karma.Data",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Data\\Karma.Data.csproj",
-        "packagesPath": "C:\\Users\\ehedtagiyev\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Data\\obj\\",
+        "projectPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Data/Karma.Data.csproj",
+        "packagesPath": "/Users/ehedtagiyev/.nuget/packages/",
+        "outputPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ehedtagiyev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ehedtagiyev/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Core\\Karma.Core.csproj": {
-                "projectPath": "\\\\Mac\\Home\\Desktop\\kkaa\\KarmaApp\\Karma.Core\\Karma.Core.csproj"
+              "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/Karma.Core.csproj": {
+                "projectPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/Karma.Core.csproj"
               }
             }
           }
@@ -208,7 +209,68 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/Karma.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/Karma.Service.csproj",
+        "projectName": "Karma.Service",
+        "projectPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/Karma.Service.csproj",
+        "packagesPath": "/Users/ehedtagiyev/.nuget/packages/",
+        "outputPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ehedtagiyev/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Data/Karma.Data.csproj": {
+                "projectPath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Data/Karma.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
         }
       }
     }

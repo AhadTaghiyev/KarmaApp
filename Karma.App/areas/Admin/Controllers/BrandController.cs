@@ -1,6 +1,6 @@
 ﻿using Karma.Core.DTOS;
 using Karma.Core.Entities;
-using Karma.Data.Contexts;
+using Karma.Service.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,19 +9,16 @@ namespace Karma.App.areas.Admin.Controllers
     [Area("Admin")]
     public class BrandController : Controller
     {
-        readonly KarmaDbContext _context;
+        readonly IBrandService _brandService;
 
-        public BrandController(KarmaDbContext context)
+        public BrandController(IBrandService brandService)
         {
-            _context = context;
+            _brandService = brandService;
         }
 
         public async Task<IActionResult> Index()
         {
-            IEnumerable<BrandGetDto> brands = await _context.Brands.Where(x => !x.IsDeleted)
-                .AsNoTrackingWithIdentityResolution().Select(x => new BrandGetDto { Name = x.Name, Id = x.Id, CreatedAt = x.CreatedAt })
-                .ToListAsync();
-            return View(brands);
+            return View(await _brandService.GetAllAsync());
         }
         public async Task<IActionResult> Create()
         {
@@ -35,57 +32,28 @@ namespace Karma.App.areas.Admin.Controllers
             {
                 return View();
             }
-            Brand brand = new Brand();
-            brand.CreatedAt=DateTime.Now;
-            brand.Name=dto.Name;
-            await _context.Brands.AddAsync(brand);
-            await _context.SaveChangesAsync();
+            await _brandService.CreateAsync(dto);
             return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Remove(int id)
         {
-            Brand? brand = await _context.Brands.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
-
-            if(brand == null)
-            {
-                return NotFound();
-            }
-
-            brand.IsDeleted = true;
-           await _context.SaveChangesAsync();
-
+            await _brandService.RemoveAsync(id);
             return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Update(int id)
         {
-            Brand? brand = await _context.Brands.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
-
-            if (brand == null)
-            {
-                return NotFound();
-            }
-            return View(brand);
+            return View(await _brandService.GetAsync(id));
         }
         [HttpPost]
         public async Task<IActionResult> Update(int id,BrandPostDto dto)
         {
-           
-            Brand? brand = await _context.Brands.Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
-
-            if (brand == null)
-            {
-                return NotFound();
-            }
-
             if (!ModelState.IsValid)
             {
-                return View(brand);
+                return View();
             }
-
-            brand.Name = dto.Name;
-            await _context.SaveChangesAsync();
+            await _brandService.UpdateAsync(id, dto);
             return RedirectToAction(nameof(Index));
         }
 

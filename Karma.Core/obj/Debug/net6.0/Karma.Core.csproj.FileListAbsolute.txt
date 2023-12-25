@@ -33,14 +33,26 @@
 /Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/refint/Karma.Core.dll
 /Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.pdb
 /Users/ehedtagiyev/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/ref/Karma.Core.dll
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\bin\Debug\net6.0\Karma.Core.deps.json
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\bin\Debug\net6.0\Karma.Core.dll
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\bin\Debug\net6.0\Karma.Core.pdb
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\obj\Debug\net6.0\Karma.Core.GeneratedMSBuildEditorConfig.editorconfig
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\obj\Debug\net6.0\Karma.Core.AssemblyInfoInputs.cache
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\obj\Debug\net6.0\Karma.Core.AssemblyInfo.cs
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\obj\Debug\net6.0\Karma.Core.csproj.CoreCompileInputs.cache
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\obj\Debug\net6.0\Karma.Core.dll
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\obj\Debug\net6.0\refint\Karma.Core.dll
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\obj\Debug\net6.0\Karma.Core.pdb
-\\Mac\Home\Desktop\kkaa\KarmaApp\Karma.Core\obj\Debug\net6.0\ref\Karma.Core.dll
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/bin/Debug/net6.0/Karma.Core.deps.json
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/bin/Debug/net6.0/Karma.Core.dll
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/bin/Debug/net6.0/Karma.Core.pdb
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.GeneratedMSBuildEditorConfig.editorconfig
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.AssemblyInfoInputs.cache
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.AssemblyInfo.cs
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.csproj.CoreCompileInputs.cache
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.dll
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/refint/Karma.Core.dll
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.pdb
+//Mac/Home/Desktop/kkaa/KarmaApp/Karma.Core/obj/Debug/net6.0/ref/Karma.Core.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/bin/Debug/net6.0/Karma.Core.deps.json
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/bin/Debug/net6.0/Karma.Core.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/bin/Debug/net6.0/Karma.Core.pdb
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.csproj.AssemblyReference.cache
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.AssemblyInfoInputs.cache
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.AssemblyInfo.cs
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.csproj.CoreCompileInputs.cache
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/refint/Karma.Core.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/Karma.Core.pdb
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.Core/obj/Debug/net6.0/ref/Karma.Core.dll
