@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:52524",
+      "applicationUrl": "http://localhost:52525",
       "sslPort": 44381
     }
   },
@@ -11,7 +11,7 @@
     "Karma.App": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7050;http://localhost:5176",
+      "applicationUrl": "https://localhost:7051;http://localhost:5177",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

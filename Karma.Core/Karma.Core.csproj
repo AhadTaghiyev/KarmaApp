@@ -16,6 +16,8 @@
     <None Remove="DTOS\Authors\" />
     <None Remove="DTOS\Blogs\" />
     <None Remove="Repositories\" />
+    <None Remove="DTOS\Products\" />
+    <None Remove="DTOS\Basktes\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -26,6 +28,8 @@
     <Folder Include="DTOS\Authors\" />
     <Folder Include="DTOS\Blogs\" />
     <Folder Include="Repositories\" />
+    <Folder Include="DTOS\Products\" />
+    <Folder Include="DTOS\Basktes\" />
   </ItemGroup>
     <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />

@@ -7,6 +7,7 @@ namespace Karma.App.ViewModels
       public  IEnumerable<CategoryGetDto> categories { get; set; }
         public IEnumerable<BrandGetDto> brands { get; set; }
         public IEnumerable<ColorGetDto> colorGetDtos { get; set; }
+        public IEnumerable<ProductGetDto> ProductGetDtos { get; set; }
     }
 }
 

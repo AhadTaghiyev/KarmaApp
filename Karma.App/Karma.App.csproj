@@ -18,6 +18,8 @@
     <None Remove="areas\Admin\Views\Position\" />
     <None Remove="areas\Admin\Views\Tag\" />
     <None Remove="areas\Admin\Views\Author\" />
+    <None Remove="areas\Admin\Views\Blog\" />
+    <None Remove="areas\Admin\Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
@@ -36,6 +38,8 @@
     <Folder Include="areas\Admin\Views\Tag\" />
     <Folder Include="areas\Admin\Views\Author\" />
     <Folder Include="wwwroot\img\author\" />
+    <Folder Include="areas\Admin\Views\Blog\" />
+    <Folder Include="areas\Admin\Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
@@ -1449,7 +1453,6 @@
     <None Include="wwwroot\admin\assets\vendors\x-editable\bootstrap-editable.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.25">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>

@@ -10,5 +10,12 @@ public class HomeController : Controller
         return View();
     }
 
+
+    public IActionResult ChangeColor(string name)
+    {
+        Response.Cookies.Append("color",name);
+        return RedirectToAction(nameof(Index));
+    }
+
 }
 

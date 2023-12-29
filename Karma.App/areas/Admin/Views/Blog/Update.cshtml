@@ -1,0 +1,74 @@
+﻿@model BlogGetDto
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Basic form layout
+                    </p>
+                    <form enctype="multipart/form-data" method="post" class="forms-sample">
+                        <div class="alert alert-danger" asp-validation-summary="ModelOnly"></div>
+                        <div class="form-group">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" class="form-control" placeholder="Name">
+                            <span class="text text-danger" asp-validation-for="Title"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Description"></label>
+                            <input asp-for="Description" class="form-control" placeholder="Info">
+                            <span class="text text-danger" asp-validation-for="Description"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" accept="image/*" name="ImageFile" class="form-control" >
+                            <br />
+                            <img  src="~/img/blog/@Model.Image"/>
+                        </div>
+                        <div class="form-group">
+                            <select name="AuthorId" class="form-select" aria-label="Default select example">
+                                <option selected>Positions</option>
+                                @foreach (var item in ViewBag.Authors)
+                                {
+
+
+                                    @if (Model.AuthorGetDto.Id == item.Id)
+                                    {
+                                        <option selected value="@item.Id">@item.FullName</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@item.Id">@item.FullName</option>
+                                    }
+                                }
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <select multiple name="TagsIds" class="form-select" aria-label="Default select example">
+                                
+                                @foreach (var item in ViewBag.Tags)
+                                {
+                                    @if (Model.tags.Any(x=>x.Id==item.Id))
+                                    {
+                                        <option selected value="@item.Id">@item.Name</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@item.Id">@item.Name</option>
+                                    }
+                                }
+                            </select>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary me-2">Submit</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,7 +7,7 @@ namespace Karma.Service.Services.Interfaces
 	public interface IAuthorService
 	{
 
-        public Task<IEnumerable<AuthorGetDto>> GetAllAsync();
+        public Task<PagginatedResponse<AuthorGetDto>> GetAllAsync(int page = 1);
 
         public  Task<CommonResponse> CreateAsync(AuthorPostDto dto);
 

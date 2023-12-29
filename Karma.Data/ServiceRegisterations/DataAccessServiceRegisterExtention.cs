@@ -22,6 +22,9 @@ namespace Karma.Data.ServiceRegisterations
             services.AddScoped<IPositionRepository,PositionRepository>();
             services.AddScoped<ITagRepository,TagRepository>();
             services.AddScoped<IAuthorRepository,AuthorRepository>();
+            services.AddScoped<IBlogRepository,BlogRepository>();
+            services.AddScoped<IProductRepository,ProductRepository>();
+            services.AddScoped<IProductImageRepository,ProductImageRepository>();
         }
     }
 }

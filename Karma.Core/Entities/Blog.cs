@@ -13,8 +13,6 @@ namespace Karma.Core.Entities
 		public int AuthorId { get; set; }
 		public Author Author { get; set; } = null!;
         public List<TagBlog> TagBlogs { get; set; }
-		//[NotMapped]
-  //      public List<int> TagsIds { get; set; }
     }
 }
 

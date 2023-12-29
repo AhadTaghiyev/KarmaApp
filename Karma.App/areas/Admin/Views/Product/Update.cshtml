@@ -1,0 +1,208 @@
+﻿@model ProductGetDto
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Basic form layout
+                    </p>
+                    <form enctype="multipart/form-data" method="post" class="forms-sample">
+                        <div class="alert alert-danger" asp-validation-summary="ModelOnly"></div>
+                        <div class="form-group">
+                            <label asp-for="Name"></label>
+                            <input asp-for="Name" class="form-control" placeholder="Name">
+                            <span class="text text-danger" asp-validation-for="Name"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Info"></label>
+                            <input asp-for="Info" class="form-control" placeholder="Info">
+                            <span class="text text-danger" asp-validation-for="Info"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Price"></label>
+                            <input asp-for="Price" class="form-control" placeholder="Price">
+                            <span class="text text-danger" asp-validation-for="Price"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="DiscountPrice"></label>
+                            <input asp-for="DiscountPrice" class="form-control" placeholder="Info">
+                            <span class="text text-danger" asp-validation-for="DiscountPrice"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Description"></label>
+                            <input asp-for="Description" class="form-control" placeholder="Info">
+                            <span class="text text-danger" asp-validation-for="Description"></span>
+                        </div>
+                        <div class="form-group">
+                            <select asp-for="CategoryId" class="form-select" aria-label="Default select example">
+                                <option selected>Category</option>
+                                @foreach (var item in ViewBag.Categories)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select asp-for="BrandId" class="form-select" aria-label="Default select example">
+                                <option selected>Brand</option>
+                                @foreach (var item in ViewBag.Brands)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                            <span class="text text-danger" asp-validation-for="BrandId"></span>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label>Main Image</label>
+                            <input type="file"  accept="image/*" name="MainImageFile" class="form-control" placeholder="MainImage">
+                        </div>
+                        <img style="margin:10px;width:200px;height:300px"   src="~/img/product/@Model.ProductImage.Where(x=>!x.IsDeleted&&x.IsMain).FirstOrDefault()?.Image" />
+
+                        <div class="form-group">
+                            <label>Other Images *You can upload multiple images</label>
+                            <input  multiple accept="image/*" type="file" name="ProductImageFile" class="form-control" placeholder="MainImage">
+                        </div>
+                        <div style=" display:flex">
+                            @foreach (var item in Model.ProductImage.Where(x => x.IsDeleted ==false && !x.IsMain))
+                            {
+                                <img class="otherimages" data-id="@item.Id"  style="margin:10px;width:200px;height:300px" src="~/img/product/@item.Image" />
+                            }
+                        </div>
+
+                        <div class="form-row col-6" id="colors">
+                            @foreach (var colorProduct in Model.ColorProducts)
+                            {
+                                <div class="form-group">
+                                    <label for="Counts">ChooseColor</label>
+                                    <select class="form-select" aria-label="Default select example" data-val="true" data-val-required="The ColorIds field is required." id="ColorIds" name="ColorIds">
+                                        <option value="">ChooseColor</option>
+                                        @foreach (var item in ViewBag.Colors)
+                                        {
+                                            @if (colorProduct.ColorId==item.Id)
+                                            {
+                                                <option selected value="@item.Id">@item.Name</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@item.Id">@item.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                    <label for="Counts">Counts</label>
+                                    <input class="form-control" placeholder="Count" type="text" data-val="true" data-val-required="The Counts field is required." id="Counts" name="Counts" value="@colorProduct.StockCount">
+                                    <span><i style="cursor:pointer" class="fas fa-minus delete-feature"> </i></span>
+                                </div>
+                                <span></span>
+                            }
+                        </div>
+
+
+                        <div class="form-row justify-content-center">
+                            <div class="form-group">
+                                <button type="button" data-nextIndex="2" class="add-color btn btn-primary">+</button>
+                            </div>
+                        </div>
+
+
+                        <div class="form-row col-12" id="spec">
+                            @foreach (var item in Model.Specifications)
+                            {
+                                <div class="form-group col-md-6" data-index="0">
+                                    <label>Spec Key</label>
+                                    <input class="form-control" value="@item.Key" name="SpecificationKeys">
+                                    <label> Spec Value</label>
+                                    <input class="form-control" value="@item.Value" name="SpecificationValues">
+                                    <span><i style="cursor:pointer" class="fas fa-minus delete-feature"> </i></span>
+                                </div>
+                            }
+
+
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group">
+                                <button type="button" data-nextIndex="2" class="add-spec btn btn-primary">+</button>
+                            </div>
+                        </div>
+
+
+
+
+                        <button type="submit" class="btn btn-primary me-2">Submit</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script>$(document).ready(function () {
+        $(document).on("click", ".add-color", function (e) {
+            e.preventDefault();
+            var nextIndex = $(this).attr("data-nextIndex");
+            var inputGroup = $('#colors').html()
+            let arrayhtmls = inputGroup.split('<span></span>')
+            console.log(arrayhtmls[0])
+            $("#colors").append($(arrayhtmls[0]))
+            nextIndex = +nextIndex + 1;
+            console.log(nextIndex)
+            $(this).attr("data-nextIndex", nextIndex)
+        })
+        $(document).on("click", ".delete-feature", function (e) {
+            e.preventDefault();
+            $(this).parents(".form-group").empty();
+        })
+
+
+
+        $(document).on("click", ".add-spec", function (e) {
+            e.preventDefault();
+            var nextIndex = $(this).attr("data-nextIndex");
+            var inputGroup = `<div class="form-group col-md-6" data-index="0">
+                                <label>Spec Key</label>
+                                <input class="form-control" type="text" data-val="true" data-val-required="The SpecificationKeys field is required." id="SpecificationKeys" name="SpecificationKeys" value="">
+                                <span class="field-validation-valid" data-valmsg-for="SpecificationKeys" data-valmsg-replace="true"></span>
+                                <label> Spec Value</label>
+                                <input class="form-control" type="text" data-val="true" data-val-required="The SpecificationValues field is required." id="SpecificationValues" name="SpecificationValues" value="">
+                                <span class="field-validation-valid" data-valmsg-for="SpecificationValues" data-valmsg-replace="true"></span>
+                                <span><i style="cursor:pointer" class="fas fa-minus delete-feature"> </i></span>
+                            </div>`
+            $("#spec").append($(inputGroup))
+            nextIndex = +nextIndex + 1;
+            console.log(nextIndex)
+            $(this).attr("data-nextIndex", nextIndex)
+        })
+        $(document).on("click", ".delete-feature", function (e) {
+            e.preventDefault();
+            $(this).parents(".form-group").empty();
+        })
+    })</script>
+
+<script>
+    const otherimages = document.querySelectorAll(".otherimages");
+
+    otherimages.forEach(image => {
+        image.addEventListener("click", (e) => {
+            e.preventDefault();
+            const id = image.getAttribute("data-id")
+            fetch(`/Admin/Product/removeimage/${id}`)
+                .then(x => x.json())
+                .then(x => {
+                    if (x.status== 200) {
+                        image.remove();
+                    } else {
+                        alert("xetabasverdi")
+                    }
+                }
+                )
+
+        })
+    })
+</script>

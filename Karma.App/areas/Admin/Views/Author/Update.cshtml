@@ -9,7 +9,7 @@
                     <p class="card-description">
                         Basic form layout
                     </p>
-                    <form method="post" class="forms-sample">
+                    <form method="post" enctype="multipart/form-data" class="forms-sample">
                         <div class="alert alert-danger" asp-validation-summary="ModelOnly"></div>
                         <div class="form-group">
                             <label asp-for="FullName"></label>
@@ -21,6 +21,14 @@
                             <input asp-for="Info" class="form-control" placeholder="Info">
                             <span class="text text-danger" asp-validation-for="Info"></span>
                         </div>
+                       
+                        <div class="form-group">
+                            <input accept="image/*" type="file" name="ImageFile" class="form-control" placeholder="Image">
+                            <br>
+                            <img src="~/img/author/@Model.Image" />
+                        </div>
+
+
                         <div class="form-group">
                             <select asp-for="PositionId" class="form-select" aria-label="Default select example">
                                 <option selected>Positions</option>

@@ -14,6 +14,11 @@ namespace Karma.Data.ServiceRegisterations
             services.AddScoped<IPositionService,PositionService>();
             services.AddScoped<ITagService,TagService>();
             services.AddScoped<IAuthorService,AuthorService>();
+            services.AddScoped<IBlogService, BlogService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductImageService, ProductImageService>();
+            services.AddScoped<IBasketService, BasketService>();
+            services.AddHttpContextAccessor();
         }
     }
 }

@@ -3803,7 +3803,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Karma.Data": "1.0.0"
+          "Karma.Data": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.25"
         },
         "compile": {
           "bin/placeholder/Karma.Service.dll": {}
@@ -10813,7 +10814,6 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Karma.Service >= 1.0.0",
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.25",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.25",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16"
     ]
@@ -10861,10 +10861,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-            "target": "Package",
-            "version": "[6.0.25, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

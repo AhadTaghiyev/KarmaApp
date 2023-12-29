@@ -21,10 +21,10 @@
                             <input asp-for="Info" class="form-control" placeholder="Info">
                             <span class="text text-danger" asp-validation-for="Info"></span>
                         </div>
+
                         <div class="form-group">
-                            <label asp-for="Info"></label>
-                            <input asp-for="ImageFile" class="form-control" placeholder="Info">
-                            <span class="text text-danger" asp-validation-for="Info"></span>
+                            <input accept="image/*" asp-for="ImageFile" class="form-control" placeholder="Info">
+                            <span class="text text-danger" asp-validation-for="ImageFile"></span>
                         </div>
                         <div class="form-group">
                             <select asp-for="PositionId" class="form-select" aria-label="Default select example">

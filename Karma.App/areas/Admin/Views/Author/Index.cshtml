@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AuthorGetDto>
+﻿@model PagginatedResponse<AuthorGetDto>
 <div class="content-wrapper">
     <div class="row">
         <div class="col-lg-12 grid-margin stretch-card">
@@ -25,7 +25,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (AuthorGetDto item in Model)
+                                @foreach (AuthorGetDto item in Model.Items)
                                 {
                                     <tr>
                                         <td>@item.Id</td>
@@ -38,6 +38,21 @@
 
                             </tbody>
                         </table>
+
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item @(1==Model.CurrentPage? "disabled":null)">
+                                    <a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage-1)"tabindex="-1">Previous</a>
+                                </li>
+                                @for (int i = 1; i <= Model.TotalPages; i++)
+                                {
+                                    <li  class="page-item @(i==Model.CurrentPage? "disabled":null)"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
+                                }
+                                <li class="page-item @(Model.TotalPages==Model.CurrentPage? "disabled":null)">
+                                    <a class="page-link"  asp-action="Index" asp-route-page="@(Model.CurrentPage+1)">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>

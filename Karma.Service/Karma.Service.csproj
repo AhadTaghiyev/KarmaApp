@@ -14,6 +14,8 @@
     <None Remove="ServiceRegisterations\" />
     <None Remove="CustomMiddlewares\" />
     <None Remove="Responses\" />
+    <None Remove="Extentions\" />
+    <None Remove="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -23,6 +25,8 @@
     <Folder Include="ServiceRegisterations\" />
     <Folder Include="CustomMiddlewares\" />
     <Folder Include="Responses\" />
+    <Folder Include="Extentions\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Karma.Data\Karma.Data.csproj" />
@@ -31,5 +35,8 @@
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.25" />
   </ItemGroup>
 </Project>

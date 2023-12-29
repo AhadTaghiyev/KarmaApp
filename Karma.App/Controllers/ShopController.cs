@@ -5,6 +5,7 @@ using Karma.Data.Contexts;
 using Karma.Service.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace Karma.App.Controllers
 {
@@ -13,13 +14,17 @@ namespace Karma.App.Controllers
         readonly IColorService _colorService;
         readonly ICategoryService _categoryService;
         readonly IBrandService _brandService;
+        readonly IProductService _productService;
+        readonly IBasketService _basketService;
 
-        public ShopController(ICategoryService categoryService, IBrandService brandService, IColorService colorService)
+        public ShopController(ICategoryService categoryService, IBrandService brandService, IColorService colorService, IProductService productService, IBasketService basketService)
         {
 
             _categoryService = categoryService;
             _brandService = brandService;
             _colorService = colorService;
+            _productService = productService;
+            _basketService = basketService;
         }
         public async Task<IActionResult> Index()
         {
@@ -27,8 +32,34 @@ namespace Karma.App.Controllers
             shoopViewModel.categories =await _categoryService.GetAllAsync();
             shoopViewModel.brands = await _brandService.GetAllAsync();
             shoopViewModel.colorGetDtos = await _colorService.GetAllAsync();
+            shoopViewModel.ProductGetDtos = await _productService.GetAllAsync();
             return View(shoopViewModel);
         }
+
+        public async Task<IActionResult>Detail(int id)
+        {
+            return View(await _productService.GetAsync(id));
+        }
+
+
+        public async Task<IActionResult> AddBasket(int id,int count=1)
+        {
+            await _basketService.AddBasket(id,count);
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Basket()
+        {
+            return View(await _basketService.GetBasket()); ;
+        }
+
+        public async Task<IActionResult> IncreaseCount(int id)
+        {
+            await _basketService.AddBasket(id,null);
+            return RedirectToAction(nameof(Basket));
+        }
+
+
     }
 }
 

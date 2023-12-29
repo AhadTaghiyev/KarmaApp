@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    string data = Context.Request.Cookies["color"];
+}
+
+<!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
 <head>
@@ -32,7 +36,7 @@
     <link rel="stylesheet" href="~/css/main.css">
 </head>
 
-<body>
+<body style="background-color:@data">
 
     <!-- Start Header Area -->
     <header class="header_area sticky-header">
@@ -81,7 +85,7 @@
                                     <li class="nav-item"><a class="nav-link" href="~/elements.html">Elements</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="~/contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="~/contact.html">@data</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item"><a href="~/#" class="cart"><span class="ti-bag"></span></a></li>

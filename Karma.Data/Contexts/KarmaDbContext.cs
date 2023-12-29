@@ -19,6 +19,10 @@ namespace Karma.Data.Contexts
 		public DbSet<Author> Authors { get; set; }
 		public DbSet<Position> Positions { get; set; }
 		public DbSet<SocialNetwork> SocialNetworks { get; set; }
+		public DbSet<Product> Products { get; set; }
+		public DbSet<ProductImage> ProductImages { get; set; }
+		public DbSet<ColorProduct> ColorProducts { get; set; }
+		public DbSet<Specification> Specifications { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {

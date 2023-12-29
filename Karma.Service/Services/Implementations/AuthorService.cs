@@ -4,6 +4,8 @@ using Karma.Core.Entities;
 using Karma.Core.Repositories;
 using Karma.Data.Repositories;
 using Karma.Service.Exceptions;
+using Karma.Service.Extentions;
+using Karma.Service.Helpers;
 using Karma.Service.Responses;
 using Karma.Service.Services.Interfaces;
 using Microsoft.AspNetCore.Hosting;
@@ -30,7 +32,29 @@ namespace Karma.Service.Services.Implementations
             {
                 StatusCode = 200
             };
-            if(! await CheckPosition(dto.PositionId))
+
+            if (dto.ImageFile == null)
+            {
+                commonResponse.StatusCode = 400;
+                commonResponse.Message = "The field image is required";
+                return commonResponse;
+            }
+
+            if (dto.Icons == null || dto.Urls == null || dto.Icons.Count() != dto.Urls.Count())
+            {
+                commonResponse.StatusCode = 400;
+                commonResponse.Message = "The socihal network is not valid";
+                return commonResponse;
+            }
+
+            if(dto.Icons.Any(x=>string.IsNullOrWhiteSpace(x))|| dto.Urls.Any(x => string.IsNullOrWhiteSpace(x)))
+            {
+                commonResponse.StatusCode = 400;
+                commonResponse.Message = "The socihal network is not valid";
+                return commonResponse;
+            }
+
+            if (! await CheckPosition(dto.PositionId))
             {
                 commonResponse.StatusCode = 404;
                 commonResponse.Message = "The Position is not valid";
@@ -42,48 +66,65 @@ namespace Karma.Service.Services.Implementations
             Author.PositionId = dto.PositionId;
             Author.Info = dto.Info;
             Author.SocialNetworks = new List<SocialNetwork>();
-            
+            CreateSochial(dto,Author);
 
-            for (int i = 0; i < dto.Icons.Count(); i++)
-            {
-                SocialNetwork socialNetwork = new SocialNetwork
-                {
-                    Author = Author,
-                    Icon = dto.Icons[i],
-                    Url = dto.Urls[i]
-                };
-                Author.SocialNetworks.Add(socialNetwork);
-            }
             Author.Storage = "wwwroot";
-            string RootPath = Path.Combine(_env.WebRootPath, "img","author");
-            string FileName = Guid.NewGuid().ToString() + dto.ImageFile.FileName;
-            string FullPath = Path.Combine(RootPath, FileName);
-            using (FileStream fileStream = new FileStream(FullPath, FileMode.Create))
+            if (!dto.ImageFile.IsImage())
             {
-                dto.ImageFile.CopyTo(fileStream);
+                commonResponse.StatusCode = 400;
+                commonResponse.Message = "Image is not valid";
+                return commonResponse;
             }
 
-            Author.Image = FileName;
+            if (dto.ImageFile.IsSizeOk(1))
+            {
+                commonResponse.StatusCode = 400;
+                commonResponse.Message = "Image  size is not valid";
+                return commonResponse;
+            }
 
+            Author.Image = dto.ImageFile.SaveFile(_env.WebRootPath, "img/author");
             await _authorRepository.AddAsync(Author);
             await _authorRepository.SaveChangesAsync();
             return commonResponse;
         }
 
-        public async Task<IEnumerable<AuthorGetDto>> GetAllAsync()
+        private void CreateSochial(AuthorPostDto dto,Author author)
         {
-            IEnumerable<AuthorGetDto> Authors = await _authorRepository.GetQuery(x => !x.IsDeleted)
+            for (int i = 0; i < dto.Icons.Count(); i++)
+            {
+                SocialNetwork socialNetwork = new SocialNetwork
+                {
+                    Author = author,
+                    Icon = dto.Icons[i],
+                    Url = dto.Urls[i]
+                };
+                author.SocialNetworks.Add(socialNetwork);
+            }
+        }
+
+        public async Task<PagginatedResponse< AuthorGetDto>> GetAllAsync(int page=1)
+        {
+            PagginatedResponse<AuthorGetDto> pagginatedResponse = new PagginatedResponse<AuthorGetDto>();
+            pagginatedResponse.CurrentPage = page;
+            var query =  _authorRepository.GetQuery(x => !x.IsDeleted)
                .AsNoTrackingWithIdentityResolution()
-               .Include(x=>x.Position)
+               .Include(x => x.Position);
+            pagginatedResponse.TotalPages = (int)Math.Ceiling((double)query.Count()/3);
+     
+            pagginatedResponse.Items=await query.Skip((page - 1) * 3)
+               .Take(3)
                .Select(x =>
-               new AuthorGetDto {
+               new AuthorGetDto
+               {
                    FullName = x.FullName,
                    Id = x.Id,
-                   position=new PositionGetDto { Name=x.Position.Name},
-                   Image=x.Image
+                   position = new PositionGetDto { Name = x.Position.Name },
+                   Image = x.Image
                })
                .ToListAsync();
-            return Authors;
+
+            return pagginatedResponse;
         }
 
         public async Task<AuthorGetDto> GetAsync(int id)
@@ -100,11 +141,12 @@ namespace Karma.Service.Services.Implementations
             {
                 Id = Author.Id,
                 FullName = Author.FullName,
-                Info=Author.Info,
-                Icons=Author.SocialNetworks.Select(x=>x.Icon).ToList(),
+                Info = Author.Info,
+                Icons = Author.SocialNetworks.Select(x => x.Icon).ToList(),
                 Urls = Author.SocialNetworks.Select(x => x.Url).ToList(),
-                PositionId=Author.PositionId,
-                position =new PositionGetDto { Name=Author.Position.Name}
+                PositionId = Author.PositionId,
+                position = new PositionGetDto { Name = Author.Position.Name },
+                Image = Author.Image
             };
             return AuthorGetDto;
         }
@@ -129,6 +171,21 @@ namespace Karma.Service.Services.Implementations
             {
                 StatusCode = 200
             };
+            if (dto.Icons == null || dto.Urls == null || dto.Icons.Count() != dto.Urls.Count())
+            {
+                commonResponse.StatusCode = 400;
+                commonResponse.Message = "The socihal network is not valid";
+                return commonResponse;
+            }
+
+            if (dto.Icons.Any(x => string.IsNullOrWhiteSpace(x)) || dto.Urls.Any(x => string.IsNullOrWhiteSpace(x)))
+            {
+                commonResponse.StatusCode = 400;
+                commonResponse.Message = "The socihal network is not valid";
+                return commonResponse;
+            }
+
+
             if (!await CheckPosition(dto.PositionId))
             {
                 commonResponse.StatusCode = 404;
@@ -147,19 +204,28 @@ namespace Karma.Service.Services.Implementations
             Author.Info = dto.Info;
             Author.PositionId = dto.PositionId;
             Author.SocialNetworks.Clear();
+            CreateSochial(dto, Author);
 
-            for (int i = 0; i < dto.Icons.Count(); i++)
+            if (dto.ImageFile != null)
             {
-                SocialNetwork socialNetwork = new SocialNetwork
+                if (!dto.ImageFile.IsImage())
                 {
-                    Author = Author,
-                    Icon = dto.Icons[i],
-                    Url = dto.Urls[i]
-                };
-                Author.SocialNetworks.Add(socialNetwork);
+                    commonResponse.StatusCode = 400;
+                    commonResponse.Message = "Image is not valid";
+                    return commonResponse;
+                }
+
+                if (dto.ImageFile.IsSizeOk(1))
+                {
+                    commonResponse.StatusCode = 400;
+                    commonResponse.Message = "Image  size is not valid";
+                    return commonResponse;
+                }
+                Helper.RmoveFile(_env.WebRootPath,"img/author",Author.Image);
+                Author.Image = dto.ImageFile.SaveFile(_env.WebRootPath, "img/author");
             }
 
-            await _authorRepository.UpdateAsync(Author);
+           await _authorRepository.UpdateAsync(Author);
             await _authorRepository.SaveChangesAsync();
             return commonResponse;
         }

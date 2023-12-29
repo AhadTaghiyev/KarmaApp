@@ -24,10 +24,10 @@ namespace Karma.App.areas.Admin.Controllers
             _positionService = positionService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-        
-            return View(await _authorService.GetAllAsync());
+         
+            return View(await _authorService.GetAllAsync(page));
         }
 
         public async Task<IActionResult> Create()

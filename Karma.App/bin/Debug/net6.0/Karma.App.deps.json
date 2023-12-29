@@ -9,7 +9,6 @@
       "Karma.App/1.0.0": {
         "dependencies": {
           "Karma.Service": "1.0.0",
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.25",
           "Microsoft.EntityFrameworkCore.Design": "6.0.25",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16"
         },
@@ -2519,7 +2518,8 @@
       },
       "Karma.Service/1.0.0": {
         "dependencies": {
-          "Karma.Data": "1.0.0"
+          "Karma.Data": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.25"
         },
         "runtime": {
           "Karma.Service.dll": {}

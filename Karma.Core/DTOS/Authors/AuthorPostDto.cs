@@ -11,7 +11,7 @@ namespace Karma.Core.DTOS
         public int PositionId { get; set; }
         public List<string> Icons { get; set; } = null!;
         public List<string> Urls { get; set; } = null!;
-        public IFormFile ImageFile{get;set;} = null!;
+        public IFormFile? ImageFile{get;set;} 
     }
 }
 

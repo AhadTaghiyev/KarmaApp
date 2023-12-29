@@ -29,7 +29,8 @@ namespace Karma.Service.Services.Implementations
         public async Task<IEnumerable<CategoryGetDto>> GetAllAsync()
         {
             IEnumerable<CategoryGetDto> Categorys = await _categoryRepository.GetQuery(x => !x.IsDeleted)
-               .AsNoTrackingWithIdentityResolution().Select(x => new CategoryGetDto { Name = x.Name, Id = x.Id, CreatedAt = x.CreatedAt })
+                .Include(x=>x.Products)
+               .AsNoTrackingWithIdentityResolution().Select(x => new CategoryGetDto { Name = x.Name, Id = x.Id, CreatedAt = x.CreatedAt,ProductCount= x.Products.Where(x=>!x.IsDeleted).Count()})
                .ToListAsync();
             return Categorys;
         }
