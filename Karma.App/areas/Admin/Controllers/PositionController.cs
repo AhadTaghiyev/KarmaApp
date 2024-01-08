@@ -1,12 +1,14 @@
 ﻿using Karma.Core.DTOS;
 using Karma.Core.Entities;
 using Karma.Service.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Karma.App.areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class PositionController : Controller
     {
         readonly IPositionService _positionService;

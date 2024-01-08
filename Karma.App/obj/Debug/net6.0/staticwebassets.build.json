@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FBjqTsMHWpcLuv9abfICag1TY1M/YdaFfh49TT+6IgU=",
+  "Hash": "hIg/NHmPwzJ16ZdXHpBxyiySA3Ry6F+qprQ1WcXeRNw=",
   "Source": "Karma.App",
   "BasePath": "_content/Karma.App",
   "Mode": "Default",
@@ -33539,6 +33539,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Karma Shop-doc/syntax-highlighter/styles/shThemeRDark.css"
+    },
+    {
+      "Identity": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/wwwroot/Templates/Verify.html",
+      "SourceId": "Karma.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/wwwroot/",
+      "BasePath": "_content/Karma.App",
+      "RelativePath": "Templates/Verify.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Templates/Verify.html"
     }
   ]
 }

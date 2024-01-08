@@ -124,59 +124,7 @@
             </div>
             <!-- End Filter Bar -->
             <!-- Start Best Seller -->
-            <section class="lattest-product-area pb-40 category-list">
-                <div class="row">
-                    @foreach (var item in Model.ProductGetDtos)
-                    {
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-product">
-                                <img style="width:100%" class="img-fluid" src="~/img/product/@item.ProductImage.Where(x=>!x.IsDeleted&&x.IsMain).FirstOrDefault()?.Image" alt="">
-                                <div class="product-details">
-                                    <h6>
-                                      @item.Name
-                                    </h6>
-                                    <div class="price">
-                                        @if (item.DiscountPrice != 0 && item.DiscountPrice < item.Price)
-                                        {
-
-
-                                            <h6>$@item.DiscountPrice</h6>
-
-
-                                            <h6 class="l-through">$@item.Price</h6>
-                                        }
-                                        else
-                                        {
-                                            <h6>$@item.Price</h6>
-
-                                        }
-                                    </div>
-                                    <div class="prd-bottom">
-
-                                        <a asp-controller="shop" asp-action="AddBasket" asp-route-id="@item.Id" class="social-info">
-                                            <span class="ti-bag"></span>
-                                            <p class="hover-text">add to bag</p>
-                                        </a>
-                                        <a href="" class="social-info">
-                                            <span class="lnr lnr-heart"></span>
-                                            <p class="hover-text">Wishlist</p>
-                                        </a>
-                                        <a href="" class="social-info">
-                                            <span class="lnr lnr-sync"></span>
-                                            <p class="hover-text">compare</p>
-                                        </a>
-                                        <a asp-controller="shop" asp-action="detail" asp-route-id="@item.Id" class="social-info">
-                                            <span class="lnr lnr-move"></span>
-                                            <p class="hover-text">view more</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    }
-
-                </div>
-            </section>
+        @await Html.PartialAsync("/Views/Shared/_ProductPartialView.cshtml", Model.ProductGetDtos)
             <!-- End Best Seller -->
             <!-- Start Filter Bar -->
             <div class="filter-bar d-flex flex-wrap align-items-center">
@@ -348,3 +296,56 @@
             }
         })
     </script>*@
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    const baskets = document.querySelectorAll(".basket");
+
+    baskets.forEach(basket => {
+        basket.addEventListener("click", (e) => {
+            e.preventDefault();
+            const url = basket.getAttribute("href")
+            try {
+                fetch(`${location.origin}${url}`)
+                    .then(res => res.json())
+                    .then(re => {
+                        if (re.status == 200) {
+                            const Toast = Swal.mixin({
+                                toast: true,
+                                position: "top-end",
+                                showConfirmButton: false,
+                                timer: 3000,
+                                timerProgressBar: true,
+                                didOpen: (toast) => {
+                                    toast.onmouseenter = Swal.stopTimer;
+                                    toast.onmouseleave = Swal.resumeTimer;
+                                }
+                            });
+                            Toast.fire({
+                                icon: "success",
+                                title: "Basket Added "
+                            });
+                        } else {
+                            const Toast = Swal.mixin({
+                                toast: true,
+                                position: "top-end",
+                                showConfirmButton: false,
+                                timer: 3000,
+                                timerProgressBar: true,
+                                didOpen: (toast) => {
+                                    toast.onmouseenter = Swal.stopTimer;
+                                    toast.onmouseleave = Swal.resumeTimer;
+                                }
+                            });
+                            Toast.fire({
+                                icon: "error",
+                                title: re.message
+                            });
+                            
+                        }
+                    })
+            } catch(err) {
+                alert("xtea bas verdi")
+            }
+        })
+    })</script>

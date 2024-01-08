@@ -16,6 +16,8 @@
     <None Remove="Responses\" />
     <None Remove="Extentions\" />
     <None Remove="Helpers\" />
+    <None Remove="ExternalServices\" />
+    <None Remove="ExternalServices\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -27,6 +29,9 @@
     <Folder Include="Responses\" />
     <Folder Include="Extentions\" />
     <Folder Include="Helpers\" />
+    <Folder Include="ExternalServices\" />
+    <Folder Include="ExternalServices\Interfaces\" />
+    <Folder Include="ExternalServices\Implementations\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Karma.Data\Karma.Data.csproj" />

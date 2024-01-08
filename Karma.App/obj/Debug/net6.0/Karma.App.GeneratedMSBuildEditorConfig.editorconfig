@@ -80,6 +80,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = YXJlYXMvQWRtaW4vVmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/areas/Admin/Views/Identity/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = YXJlYXMvQWRtaW4vVmlld3MvSWRlbnRpdHkvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/areas/Admin/Views/Position/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = YXJlYXMvQWRtaW4vVmlld3MvUG9zaXRpb24vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -144,8 +148,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Views/Identity/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSWRlbnRpdHkvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Views/Identity/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSWRlbnRpdHkvUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Views/Position/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zaXRpb24vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Views/Shared/_ProductPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Qcm9kdWN0UGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Views/Shop/Basket.cshtml]

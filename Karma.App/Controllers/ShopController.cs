@@ -42,10 +42,10 @@ namespace Karma.App.Controllers
         }
 
 
-        public async Task<IActionResult> AddBasket(int id,int count=1)
+        public async Task<IActionResult> AddBasket(int id,int? count=1)
         {
             await _basketService.AddBasket(id,count);
-            return RedirectToAction(nameof(Index));
+            return Json(new {status=200});
         }
 
         public async Task<IActionResult> Basket()
@@ -58,6 +58,13 @@ namespace Karma.App.Controllers
             await _basketService.AddBasket(id,null);
             return RedirectToAction(nameof(Basket));
         }
+        public async Task<IActionResult> DecreaseCount(int id)
+        {
+            await _basketService.DecreaseCount(id);
+            return RedirectToAction(nameof(Basket));
+        }
+
+        
 
 
     }

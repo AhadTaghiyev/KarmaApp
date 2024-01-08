@@ -1,12 +1,14 @@
 ﻿using System;
 using Karma.Core.DTOS;
 using Karma.Service.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Karma.App.areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class ProductController: Controller
+    [Authorize(Roles = "Admin,SuperAdmin")]
+    public class ProductController: Controller
     {
         readonly ICategoryService _categoryService;
         readonly IColorService _colorService;

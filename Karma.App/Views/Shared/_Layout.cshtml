@@ -76,15 +76,26 @@
                 <li class="nav-item"><a class="nav-link" href="~/single-blog.html">Blog Details</a></li>
             </ul>
         </li>*@
-                            <li class="nav-item submenu dropdown">
-                                <a href="~/#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                   aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="~/login.html">Login</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="~/tracking.html">Tracking</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="~/elements.html">Elements</a></li>
-                                </ul>
-                            </li>
+                            @if (User.Identity.IsAuthenticated&&User.IsInRole("User"))
+                            {
+                                <li class="nav-item submenu dropdown">
+                                    <a href="~/#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                       aria-expanded="false">@User.Identity.Name</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" asp-controller="identity" asp-action="Logout">Logout</a></li>
+                                    </ul>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item submenu dropdown">
+                                    <a href="~/#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                       aria-expanded="false">Menu</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" asp-controller="identity" asp-action="login">Login</a></li>
+                                    </ul>
+                                </li>
+                            }
                             <li class="nav-item"><a class="nav-link" href="~/contact.html">@data</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">

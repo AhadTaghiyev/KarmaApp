@@ -52,10 +52,10 @@
                                                 class="increase items-count" type="button">
                                             <i class="lnr lnr-chevron-up"></i>
                                         </a>
-                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                        <a asp-controller="shop" asp-action="DecreaseCount" asp-route-id="@item.Id"
                                                 class="reduced items-count" type="button">
                                             <i class="lnr lnr-chevron-down"></i>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                                 <td>

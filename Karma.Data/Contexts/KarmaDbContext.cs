@@ -1,10 +1,11 @@
 ﻿using System;
 using Karma.Core.Entities;
 using Karma.Core.Entities.BaseEntities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace Karma.Data.Contexts
 {
-	public class KarmaDbContext:DbContext
+	public class KarmaDbContext:IdentityDbContext<AppUser>
 	{
 		public KarmaDbContext(DbContextOptions<KarmaDbContext> options):base(options)
 		{

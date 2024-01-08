@@ -8,6 +8,9 @@ namespace Karma.Service.Services.Interfaces
 		public Task AddBasket(int id,int? count);
 
 		public Task<BasketGetDto> GetBasket();
-	}
+
+		public Task DecreaseCount(int id);
+
+    }
 }
 

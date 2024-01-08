@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ProductGetDto>
+
+<section class="lattest-product-area pb-40 category-list">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-6">
+                <div class="single-product">
+                    <img style="width:100%" class="img-fluid" src="~/img/product/@item.ProductImage.Where(x=>!x.IsDeleted&&x.IsMain).FirstOrDefault()?.Image" alt="">
+                    <div class="product-details">
+                        <h6>
+                            @item.Name
+                        </h6>
+                        <div class="price">
+                            @if (item.DiscountPrice != 0 && item.DiscountPrice < item.Price)
+                            {
+
+
+                                <h6>$@item.DiscountPrice</h6>
+
+
+                                <h6 class="l-through">$@item.Price</h6>
+                            }
+                            else
+                            {
+                                <h6>$@item.Price</h6>
+
+                            }
+                        </div>
+                        <div class="prd-bottom">
+
+                            <a asp-controller="shop" asp-action="AddBasket" asp-route-id="@item.Id" class="social-info basket">
+                                <span class="ti-bag"></span>
+                                <p class="hover-text">add to bag</p>
+                            </a>
+                            <a href="" class="social-info">
+                                <span class="lnr lnr-heart"></span>
+                                <p class="hover-text">Wishlist</p>
+                            </a>
+                            <a href="" class="social-info">
+                                <span class="lnr lnr-sync"></span>
+                                <p class="hover-text">compare</p>
+                            </a>
+                            <a asp-controller="shop" asp-action="detail" asp-route-id="@item.Id" class="social-info">
+                                <span class="lnr lnr-move"></span>
+                                <p class="hover-text">view more</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</section>

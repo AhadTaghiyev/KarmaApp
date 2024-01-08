@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Karma.Core.DTOS;
 using Karma.Service.Services.Implementations;
 using Karma.Service.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Karma.App.areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class BlogController : Controller
     {
         readonly IBlogService _blogService;

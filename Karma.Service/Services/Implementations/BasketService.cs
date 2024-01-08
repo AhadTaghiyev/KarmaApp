@@ -21,7 +21,7 @@ namespace Karma.Service.Services.Implementations
         public async Task AddBasket(int id, int? count)
         {
             var product = await _productService.GetAsync(id);
-            if (product == null) throw new ItemNotFoundExcpetion("item not found");
+            if (product == null) throw new ItemNotFoundExcpetion("Product Not found");
             List<BasketDto>? basketDtos = new List<BasketDto>();
 
             var basketJson = _http.HttpContext.Request.Cookies["basket"];
@@ -60,6 +60,39 @@ namespace Karma.Service.Services.Implementations
 
             basketJson = JsonConvert.SerializeObject(basketDtos);
            _http.HttpContext.Response.Cookies.Append("basket", basketJson);
+        }
+
+        public async Task DecreaseCount(int id)
+        {
+            List<BasketDto>? basketDtos = new List<BasketDto>();
+            var product = await _productService.GetAsync(id);
+            if (product == null) throw new ItemNotFoundExcpetion("Product Not found");
+            var basketJson = _http.HttpContext.Request.Cookies["basket"];
+            if (basketJson == null)
+            {
+                if (product == null) throw new ItemNotFoundExcpetion("Product Not found");
+            }
+            else
+            {
+                basketDtos = JsonConvert.DeserializeObject<List<BasketDto>>(basketJson);
+
+                BasketDto? basketDto = basketDtos.FirstOrDefault(x => x.Id == id);
+
+                if (basketDto == null)
+                {
+                    throw new ItemNotFoundExcpetion("Product Not found");
+                }else if (basketDto.Count == 1)
+                {
+                    basketDtos.Remove(basketDto);
+                }
+                else
+                {
+                    basketDto.Count--;
+                }
+
+            }
+            basketJson = JsonConvert.SerializeObject(basketDtos);
+            _http.HttpContext.Response.Cookies.Append("basket", basketJson);
         }
 
         public async Task<BasketGetDto> GetBasket()

@@ -18,6 +18,7 @@
     <None Remove="Repositories\" />
     <None Remove="DTOS\Products\" />
     <None Remove="DTOS\Basktes\" />
+    <None Remove="DTOS\Identities\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -30,8 +31,12 @@
     <Folder Include="Repositories\" />
     <Folder Include="DTOS\Products\" />
     <Folder Include="DTOS\Basktes\" />
+    <Folder Include="DTOS\Identities\" />
   </ItemGroup>
     <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.25" />
+    </ItemGroup>
 </Project>

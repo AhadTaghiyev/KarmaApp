@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Net;
+using Karma.Core.DTOS;
 using Karma.Service.Exceptions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace Karma.Service.CustomMiddlewares
 {
@@ -28,11 +30,12 @@ namespace Karma.Service.CustomMiddlewares
                         message = contextFeature.Message;
                     }
                     context.Response.ContentType = "application/json";
-                    await context.Response.WriteAsync(new
+                    var obj = new
                     {
-                        StatusCode = statusCode,
-                        Message = contextFeature.Message
-                    }.ToString());
+                        status = statusCode,
+                        message = contextFeature.Message
+                    };
+                    await context.Response.WriteAsync(JsonConvert.SerializeObject(obj));
                 });
             });
         }

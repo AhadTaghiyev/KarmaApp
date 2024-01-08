@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        a.button {
+            background: black;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        /* Responsive font size for mobile */
+        @media (max-width: 768px) {
+            h1, h2, h3, div, h4, a, p {
+                font-size: 12px;
+            }
+        }
+
+        img {
+            max-width: 100%; /* Ensures the image is not wider than its container */
+            max-height: 400px; /* Adjust as needed */
+            height: auto; /* Maintains aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="img-fluid" src="http://bashirja-005-site10.etempurl.com/ababab.png" alt="">
+        </div>
+        <div class="content">
+            <p>Hi Edouard Aparicio,</p>
+            <h4>This is to inform you that our attempt to charge the card on file has failed!</h4>
+            <p>
+                Your monthly ({{price}} USD) payment for <b><u>The Secrets Of Orchestration</u></b> was not successful. It's okay —
+                you can update your payment information online, and we'll try again in a few days.
+            </p>
+            <a href="{{url}}" class="button">Pay Now</a>
+        </div>
+        <div class="footer">
+            <p>
+
+                We automatically re-try failed attempts on the 3rd, 7th, and 14th day after the original subscription
+                due date. The subscription will be cancelled automatically after all of these attempts fail!
+            </p>
+            <p>
+                If you have questions about this payment, or your subscription, or would just like to chat, reply directly
+                to this email. We'd love to hear from you
+            </p>
+            <br>
+            <br>
+            <p style="text-align: start;">Best wishes,</p>
+            <p style="text-align: start;">Asgarzade Music School</p>
+        </div>
+    </div>
+</body>
+</html>

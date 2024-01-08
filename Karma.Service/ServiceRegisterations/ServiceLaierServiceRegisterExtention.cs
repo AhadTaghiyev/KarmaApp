@@ -1,4 +1,6 @@
-﻿using Karma.Service.Services.Implementations;
+﻿using Karma.Service.ExternalServices.Implementations;
+using Karma.Service.ExternalServices.Interfaces;
+using Karma.Service.Services.Implementations;
 using Karma.Service.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,6 +21,7 @@ namespace Karma.Data.ServiceRegisterations
             services.AddScoped<IProductImageService, ProductImageService>();
             services.AddScoped<IBasketService, BasketService>();
             services.AddHttpContextAccessor();
+            services.AddScoped<IEmailService, EmailService>();
         }
     }
 }

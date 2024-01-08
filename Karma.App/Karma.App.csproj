@@ -20,6 +20,8 @@
     <None Remove="areas\Admin\Views\Author\" />
     <None Remove="areas\Admin\Views\Blog\" />
     <None Remove="areas\Admin\Views\Product\" />
+    <None Remove="areas\Admin\Views\Identity\" />
+    <None Remove="Views\Identity\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
@@ -40,10 +42,14 @@
     <Folder Include="wwwroot\img\author\" />
     <Folder Include="areas\Admin\Views\Blog\" />
     <Folder Include="areas\Admin\Views\Product\" />
+    <Folder Include="areas\Admin\Views\Identity\" />
+    <Folder Include="Views\Identity\" />
+    <Folder Include="wwwroot\Templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
     <Content Remove="wwwroot\img\author\" />
+    <Content Remove="wwwroot\Templates\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\admin\assets\css\maps\vertical-layout-light\style.css.map" />

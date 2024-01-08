@@ -261,6 +261,10 @@
       "PackagePath": "staticwebassets/Karma Shop-doc/syntax-highlighter/styles/shThemeRDark.css"
     },
     {
+      "Id": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/wwwroot/Templates/Verify.html",
+      "PackagePath": "staticwebassets/Templates/Verify.html"
+    },
+    {
       "Id": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/wwwroot/admin/assets/css/maps/vertical-layout-light/style.css.map",
       "PackagePath": "staticwebassets/admin/assets/css/maps/vertical-layout-light/style.css.map"
     },

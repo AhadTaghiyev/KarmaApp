@@ -1,7 +1,9 @@
 ﻿using System;
+using Karma.Core.Entities;
 using Karma.Core.Repositories;
 using Karma.Data.Contexts;
 using Karma.Data.Repositories;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +27,17 @@ namespace Karma.Data.ServiceRegisterations
             services.AddScoped<IBlogRepository,BlogRepository>();
             services.AddScoped<IProductRepository,ProductRepository>();
             services.AddScoped<IProductImageRepository,ProductImageRepository>();
+
+            services.AddIdentity<AppUser, IdentityRole>(opt =>
+            {
+                opt.User.RequireUniqueEmail = true;
+                opt.Lockout.MaxFailedAccessAttempts = 5;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);
+                opt.SignIn.RequireConfirmedEmail = true;
+            })
+                .AddEntityFrameworkStores<KarmaDbContext>()
+                .AddDefaultTokenProviders();
+
         }
     }
 }
