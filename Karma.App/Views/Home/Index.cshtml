@@ -1,7 +1,19 @@
 ﻿@model IEnumerable<ProductGetDto>
 @{
     ViewData["Title"] = "Home Page";
+
 }
+
+@if (TempData["emailverify"] != null)
+{
+    <div id="verify" style="display:none">@TempData["emailverify"]</div>
+}
+
+@if (TempData["resetPassword"] != null)
+{
+    <div id="resetpassword" style="display:none">@TempData["emailverify"]</div>
+}
+
 
 
 <!-- start banner Area -->
@@ -734,13 +746,48 @@
         </div>
     </div>
 </section>
-<!-- End related-product Area -->
-@*<script>
-    const navItems = document.querySelectorAll(".nav-item");
-    navItems.forEach(item => {
-        const value = item.getAttribute("controller");
-        if (value === "home") {
-            item.classList.add("active")
-        }
-    })
-</script>*@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+
+    const data = document.getElementById("resetpassword");
+    if (data != undefined) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 6000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        Toast.fire({
+            icon: "warning",
+            title: "please got to email "
+        });
+    }
+
+
+
+
+
+    const data = document.getElementById("verify");
+    if (data != undefined) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 6000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        Toast.fire({
+            icon: "warning",
+            title: "please verify your email "
+        });
+    }</script>

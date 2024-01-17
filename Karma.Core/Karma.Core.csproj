@@ -19,6 +19,9 @@
     <None Remove="DTOS\Products\" />
     <None Remove="DTOS\Basktes\" />
     <None Remove="DTOS\Identities\" />
+    <None Remove="DTOS\Contacts\" />
+    <None Remove="Enums\" />
+    <None Remove="DTOS\Orders\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -32,6 +35,9 @@
     <Folder Include="DTOS\Products\" />
     <Folder Include="DTOS\Basktes\" />
     <Folder Include="DTOS\Identities\" />
+    <Folder Include="DTOS\Contacts\" />
+    <Folder Include="Enums\" />
+    <Folder Include="DTOS\Orders\" />
   </ItemGroup>
     <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />

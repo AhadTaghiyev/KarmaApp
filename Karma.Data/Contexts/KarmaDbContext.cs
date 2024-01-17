@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Reflection;
 using Karma.Core.Entities;
 using Karma.Core.Entities.BaseEntities;
+using Karma.Data.Configurations;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace Karma.Data.Contexts
@@ -24,6 +26,11 @@ namespace Karma.Data.Contexts
 		public DbSet<ProductImage> ProductImages { get; set; }
 		public DbSet<ColorProduct> ColorProducts { get; set; }
 		public DbSet<Specification> Specifications { get; set; }
+		public DbSet<Basket> Baskets { get; set; }
+		public DbSet<BasketItem> BasketItems { get; set; }
+		public DbSet<Contact> Contacts { get; set; }
+		public DbSet<Order> Orders { get; set; }
+		public DbSet<OrderItem> OrderItems { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
@@ -41,7 +48,13 @@ namespace Karma.Data.Contexts
             }
                 return base.SaveChangesAsync(cancellationToken);
         }
-       
+
+        //protected override void OnModelCreating(ModelBuilder builder)
+        //{
+        //    builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        //    base.OnModelCreating(builder);
+        //}
+
     }
 }
 

@@ -1,0 +1,30 @@
+﻿@model OrderGetDto
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Basic form layout
+                    </p>
+                    <form class="forms-sample">
+                        <div class="alert alert-danger" asp-validation-summary="ModelOnly"></div>
+                        <div class="form-group">
+                            <input disabled asp-for="AppUser.FullName" class="form-control" placeholder="Name">
+                        </div>
+
+                        @foreach (var item in Model.OrderItems)
+                        {
+                            <div class="form-group">
+                                <input disabled value="@item.Product.Name*@item.Count" class="form-control" placeholder="Name">
+                            </div>
+                        }
+                        <button class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

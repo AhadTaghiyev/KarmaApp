@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kwNhmFP5p2mbGiM9vNFcsUtwtuhzxQpPNXK/E6ePWdlVqhYT2AfNkzcOJmTxAKxQlGSCUvzLVFqnGG7KyTwp9g==",
+  "dgSpecHash": "+ff9wTDyTgxPxPDdjEh58pqkMLK607QvkWAIEnpVLlekA7ZfjaFin3qnReKPnYFiGu+b2xmaR0u5q38ikJXq7w==",
   "success": true,
   "projectFilePath": "/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/Karma.App.csproj",
   "expectedPackageFiles": [
+    "/Users/ehedtagiyev/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/ehedtagiyev/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/ehedtagiyev/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/ehedtagiyev/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/ehedtagiyev/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

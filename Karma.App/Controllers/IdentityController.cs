@@ -5,8 +5,13 @@ using System.Threading.Tasks;
 using Karma.Core.DTOS;
 using Karma.Core.Entities;
 using Karma.Service.ExternalServices.Interfaces;
+using Karma.Service.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using static System.Net.WebRequestMethods;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -19,13 +24,15 @@ namespace Karma.App.Controllers
         readonly SignInManager<AppUser> _signInManager;
         readonly IEmailService _emailService;
         readonly IWebHostEnvironment _webHostEnvironment;
-        public IdentityController(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IEmailService emailService, IWebHostEnvironment webHostEnvironment)
+        readonly IBasketService _basketService;
+        public IdentityController(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IEmailService emailService, IWebHostEnvironment webHostEnvironment, IBasketService basketService)
         {
             _roleManager = roleManager;
             _userManager = userManager;
             _signInManager = signInManager;
             _emailService = emailService;
             _webHostEnvironment = webHostEnvironment;
+            _basketService = basketService;
         }
 
         public async Task<IActionResult> Register()
@@ -61,8 +68,6 @@ namespace Karma.App.Controllers
             await _userManager.AddToRoleAsync(appUser, "User");
 
           
-
-
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(appUser);
             var url = $"{Request.Scheme}://{Request.Host}{Url.Action("VerifyEmail", "Identity", new { email = appUser.Email, token = token })}";
 
@@ -76,6 +81,7 @@ namespace Karma.App.Controllers
 
 
             await _emailService.SendEmail(appUser.Email,"Verify Email",body);
+            TempData["emailverify"] = "verify";
             return RedirectToAction("index","Home");
         }
 
@@ -131,7 +137,9 @@ namespace Karma.App.Controllers
             }
 
 
-            return RedirectToAction("Index", "Home");
+      
+
+                return RedirectToAction("Index", "Home");
         }
 
         public async Task<IActionResult> Logout()
@@ -139,6 +147,128 @@ namespace Karma.App.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("index", "home");
         }
+        [Authorize]
+        public  async Task<IActionResult> Update()
+        {
+            var query = _userManager.Users.Where(x => x.UserName == User.Identity.Name);
+            UpdateDto? updateDto = await query.Select(x => new UpdateDto { UserName = x.UserName, FullName = x.FullName })
+                .FirstOrDefaultAsync();
+
+            return View(updateDto);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Update(UpdateDto dto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            AppUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            appUser.FullName = dto.FullName;
+            appUser.UserName = dto.UserName;
+           IdentityResult result= await _userManager.UpdateAsync(appUser);
+
+            if (!result.Succeeded)
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError("", item.Description);
+                }
+                return View();
+            }
+
+            if (!string.IsNullOrWhiteSpace(dto.OldPassword))
+            {
+               var res= await _userManager.ChangePasswordAsync(appUser,dto.OldPassword,dto.NewPassword);
+
+                if (!res.Succeeded)
+                {
+                    foreach (var item in res.Errors)
+                    {
+                        ModelState.AddModelError("", item.Description);
+                    }
+                    return View();
+                }
+            }
+            await _signInManager.SignInAsync(appUser,true);
+            return RedirectToAction(nameof(Update));
+        }
+
+
+        public async Task<IActionResult> ForgetPassword()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ForgetPassword(string email)
+        {
+            AppUser appUser = await _userManager.FindByEmailAsync(email);
+
+
+            if (appUser == null)
+            {
+                ModelState.AddModelError("", "please add valid email");
+                return View();
+            }
+
+
+            string token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
+            var url = $"{Request.Scheme}://{Request.Host}{Url.Action("ResetPassword", "Identity", new { email = appUser.Email, token = token })}";
+
+            string path = Path.Combine(_webHostEnvironment.WebRootPath, "Templates", "Verify.html");
+
+            string body = string.Empty;
+
+            body = System.IO.File.ReadAllText(path);
+
+            body = body.Replace("{{url}}", url);
+
+
+            await _emailService.SendEmail(appUser.Email, "Reset Passsword", body);
+            TempData["resetPassword"] = "reset";
+            return RedirectToAction("index","home");
+        }
+
+
+        public async Task<IActionResult> ResetPassword(string email, string token)
+        {
+            AppUser appUser = await _userManager.FindByEmailAsync(email);
+
+            if (appUser == null)
+            {
+                return NotFound();
+            }
+            return View(new ResetPasswordDto { Email=email,Token=token});
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordDto dto)
+        {
+            AppUser appUser = await _userManager.FindByEmailAsync(dto.Email);
+
+            if (appUser == null)
+            {
+                return NotFound();
+            }
+
+          var res=  await _userManager.ResetPasswordAsync(appUser,dto.Token,dto.Password);
+
+            if (!res.Succeeded)
+            {
+                foreach (var item in res.Errors)
+                {
+                    ModelState.AddModelError("",item.Description);
+                }
+                return View(dto);
+            }
+            return View(nameof(Login));
+        }
+
+
+
 
         //public async Task<IActionResult> Index()
         //{

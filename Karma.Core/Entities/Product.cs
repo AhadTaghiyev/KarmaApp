@@ -17,6 +17,8 @@ namespace Karma.Core.Entities
 		public List<Specification> Specifications { get; set; } = null!;
         public List<ColorProduct> ColorProducts { get; set; } = null!;
         public List<ProductImage> ProductImages { get; set; } = null!;
+        public List<BasketItem> BasketItems { get; set; } = null!;
+        public List<OrderItem> OrderItems { get; set; } = null!;
     }
 }
 

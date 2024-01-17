@@ -27,7 +27,10 @@ namespace Karma.Data.ServiceRegisterations
             services.AddScoped<IBlogRepository,BlogRepository>();
             services.AddScoped<IProductRepository,ProductRepository>();
             services.AddScoped<IProductImageRepository,ProductImageRepository>();
-
+            services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddScoped<IBasketItemRepository, BasketItemRepository>();
+            services.AddScoped<IContactRepository, ContactRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddIdentity<AppUser, IdentityRole>(opt =>
             {
                 opt.User.RequireUniqueEmail = true;

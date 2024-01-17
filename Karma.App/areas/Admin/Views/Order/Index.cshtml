@@ -1,0 +1,48 @@
+﻿@model IEnumerable<OrderGetDto>
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"><a class="btn btn-success"  asp-action="create">
+                        Add New Brand
+                    </a></h4>
+                    <p class="card-description">
+                        Add class <code>.table</code>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Adress</th>
+                                    <th>Text</th>
+                                    <th>Status</th>
+                                    <th>Operations</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                               @foreach (OrderGetDto item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Adress</td>
+                                        <td>@item.Text</td>
+                                        <td>@((Karma.Core.Enums.OrderStatus)item.Status)</td>
+                                        <td>
+                                            <a onclick="return confirm('are you sure?')" asp-action="reject" asp-route-id="@item.Id" class="badge badge-danger">Reject</a> <a asp-action="Compleet" asp-route-id="@item.Id" class="badge badge-warning">Compleet</a>  <a asp-action="Accept" asp-route-id="@item.Id" class="badge badge-success">Accept</a>
+
+                                            <a asp-action="Detail" asp-route-id="@item.Id" class="badge badge-success">Detail</a>
+                                        </td>
+                                    </tr>
+                                }
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

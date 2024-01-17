@@ -22,6 +22,8 @@ namespace Karma.Data.ServiceRegisterations
             services.AddScoped<IBasketService, BasketService>();
             services.AddHttpContextAccessor();
             services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<IContactService, ContactService>();
+            services.AddScoped<IOrderService, OrderService>();
         }
     }
 }

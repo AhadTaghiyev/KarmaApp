@@ -781,3 +781,5 @@
 /Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/obj/Debug/net6.0/Karma.App.pdb
 /Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/obj/Debug/net6.0/Karma.App.genruntimeconfig.cache
 /Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/obj/Debug/net6.0/ref/Karma.App.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/bin/Debug/net6.0/AutoMapper.dll
+/Users/ehedtagiyev/Desktop/P236 project/KarmaApp/Karma.App/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

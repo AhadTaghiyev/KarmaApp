@@ -22,6 +22,9 @@
     <None Remove="areas\Admin\Views\Product\" />
     <None Remove="areas\Admin\Views\Identity\" />
     <None Remove="Views\Identity\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="areas\Admin\Views\Contact\" />
+    <None Remove="areas\Admin\Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
@@ -45,6 +48,9 @@
     <Folder Include="areas\Admin\Views\Identity\" />
     <Folder Include="Views\Identity\" />
     <Folder Include="wwwroot\Templates\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="areas\Admin\Views\Contact\" />
+    <Folder Include="areas\Admin\Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />

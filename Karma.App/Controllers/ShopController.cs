@@ -1,8 +1,10 @@
 ﻿using Karma.App.ViewModels;
 using Karma.Core.DTOS;
+using Karma.Core.DTOS.Orders;
 using Karma.Core.Entities;
 using Karma.Data.Contexts;
 using Karma.Service.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -16,8 +18,9 @@ namespace Karma.App.Controllers
         readonly IBrandService _brandService;
         readonly IProductService _productService;
         readonly IBasketService _basketService;
+        readonly IOrderService _orderService;
 
-        public ShopController(ICategoryService categoryService, IBrandService brandService, IColorService colorService, IProductService productService, IBasketService basketService)
+        public ShopController(ICategoryService categoryService, IBrandService brandService, IColorService colorService, IProductService productService, IBasketService basketService, IOrderService orderService)
         {
 
             _categoryService = categoryService;
@@ -25,6 +28,7 @@ namespace Karma.App.Controllers
             _colorService = colorService;
             _productService = productService;
             _basketService = basketService;
+            _orderService = orderService;
         }
         public async Task<IActionResult> Index()
         {
@@ -64,9 +68,22 @@ namespace Karma.App.Controllers
             return RedirectToAction(nameof(Basket));
         }
 
-        
+        [Authorize]
+        public async Task<IActionResult> Checkout()
+        {
+            ViewBag.Baskets = await _basketService.GetBasket();
+            return View();
+        }
 
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Checkout(OrderPostDto dto)
+        {
+            await _orderService.CreateAsync(dto);
+            return RedirectToAction(nameof(Index));
+        }
 
+       
     }
 }
 

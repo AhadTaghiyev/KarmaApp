@@ -1,5 +1,6 @@
 ﻿using Karma.Data.ServiceRegisterations;
 using Karma.Service.CustomMiddlewares;
+using Karma.Service.Mappers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ builder.Services.AddControllersWithViews()
     .AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
+builder.Services.AddAutoMapper(typeof(GlobalMapping));
 builder.Services.DataAccessServiceRegister(builder.Configuration);
 builder.Services.ServiceLayerServiceRegister();
 var app = builder.Build();
@@ -18,7 +20,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-app.ConfigureExceptionHandler();
+//app.ConfigureExceptionHandler();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
